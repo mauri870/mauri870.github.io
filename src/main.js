@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App'
 
 /* eslint-disable no-new */
-new Vue({
-  el: 'body',
-  components: { App }
-})
+var app = new Vue({components: { App }})
+
+app.$mount('body')
