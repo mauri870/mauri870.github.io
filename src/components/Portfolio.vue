@@ -2,7 +2,9 @@
   <section id="works"></section>
   <div class="container">
     <div class="row centered mt mb">
-      <h1>My Portfolio</h1>
+      <h1>I <i class="fa fa-heart heart"></i> open source</h1>
+
+      <p>Some project that I have work on:</p>
 
       <div class="col-lg-4 col-md-4 col-sm-4 gallery">
         <a href="#"><img src="../assets/img/portfolio/folio01.png" class="img-responsive"></a>
@@ -31,6 +33,10 @@ export default {}
 </script>
 
 <style scoped>
+  .heart {
+    color: red;
+  }
+
   .gallery {
     margin-top: 30px;
   }
