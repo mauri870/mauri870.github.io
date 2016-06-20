@@ -84,6 +84,14 @@ export default {
     color: #4a4a4a;
   }
 
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: #1abc9c;
+    text-decoration: none;
+  }
 
   .navbar-brand {
     font-weight: 700;
