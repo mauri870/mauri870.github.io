@@ -4,7 +4,7 @@
     <div class="row centered mt mb">
       <h1>I <i class="fa fa-heart heart"></i> open source</h1>
 
-      <p>Some project that I have work on:</p>
+      <p>Some projects that I have worked on:</p>
 
       <div class="col-lg-4 col-md-4 col-sm-4 gallery">
         <a href="#"><img src="../assets/img/portfolio/folio01.png" class="img-responsive"></a>
