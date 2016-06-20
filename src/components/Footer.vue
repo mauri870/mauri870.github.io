@@ -3,14 +3,13 @@
     <div class="container">
       <div class="row centered">
         <div class="col-lg-4">
-          <p><b>WEB DESIGNER, DEVELOPER & GAME ADDICT</b></p>
+          <p><b>{{ info.phrase | uppercase }}</b></p>
         </div>
 
+        <div class="col-lg-4"></div>
+
         <div class="col-lg-4">
-          <p>Living in the amazing London.</p>
-        </div>
-        <div class="col-lg-4">
-          <p>hello@instant.com</p>
+          <p><a href="mailto:{{ info.email }}">{{ info.email }}</a></p>
         </div>
       </div>
     </div>
@@ -18,7 +17,15 @@
 </template>
 
 <script>
-export default {}
+import InfoStore from '../store/info'
+
+export default {
+  data () {
+    return {
+      info: InfoStore.state
+    }
+  }
+}
 </script>
 
 <style scoped>
