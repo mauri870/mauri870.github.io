@@ -35,13 +35,13 @@ export default {
 
   ::-moz-selection {
     background: #f2c2c9;
-    color: #a4003a;
+    color: black;
     text-shadow: none;
   }
 
   ::selection {
     background: #16a085;
-    color: #a4003a;
+    color: black;
     text-shadow: none;
   }
 
