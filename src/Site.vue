@@ -14,7 +14,7 @@
 
 <script>
 import NavbarSite from './components/Navbar.vue'
-import HeaderWrap from './components/HeaderWrap.vue'
+import HeaderWrap from './components/Header.vue'
 import MyPortfolio from './components/Portfolio.vue'
 import SocialSection from './components/Social.vue'
 import FooterSite from './components/Footer.vue'
