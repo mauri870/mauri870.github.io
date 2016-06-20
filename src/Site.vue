@@ -30,7 +30,30 @@ export default {
 </script>
 
 <style>
-  @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+  @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+
+  body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: #1abc9c;
+    text-decoration: none;
+  }
 
   ::-moz-selection {
     background: #f2c2c9;
@@ -67,29 +90,6 @@ export default {
 
   .mb {
     margin-bottom: 80px;
-  }
-
-  body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    color: #4a4a4a;
-  }
-
-  a {
-    color: white;
-  }
-
-  a:hover {
-    color: #1abc9c;
-    text-decoration: none;
   }
 
   .navbar-brand {
