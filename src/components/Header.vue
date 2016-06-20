@@ -18,7 +18,7 @@ export default {}
 
 <style scoped>
   #headerwrap {
-    background: url(../assets/img/back.jpg) no-repeat center top;
+    background: url(../assets/img/work.jpg) no-repeat center top;
     margin-top: -70px;
     padding-top: 250px;
     text-align:center;
