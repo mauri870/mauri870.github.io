@@ -3,9 +3,9 @@ import 'bootstrap/dist/js/bootstrap'
 import 'font-awesome/css/font-awesome.css'
 
 import Vue from 'vue'
-import App from './App'
+import Site from './Site'
 
 /* eslint-disable no-new */
-var app = new Vue({components: { App }})
+var app = new Vue({components: { Site }})
 
 app.$mount('body')
