@@ -10,6 +10,7 @@
       </div>
     </div>
   </div>
+  <span id="control-navbar"></span>
 </template>
 
 <script>
