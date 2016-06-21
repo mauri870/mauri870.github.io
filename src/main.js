@@ -7,7 +7,7 @@ import 'bootstrap/dist/js/bootstrap'
 import 'font-awesome/css/font-awesome.css'
 
 // Init tooltips
-$(document).ready(function () { $('[data-toggle="tooltip"]').tooltip() })
+$(document).ready(() => { $('[data-toggle="tooltip"]').tooltip() })
 
 /* eslint-disable no-new */
 var app = new Vue({components: { Site }})
