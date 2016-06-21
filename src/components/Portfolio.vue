@@ -51,36 +51,46 @@ export default {
 
   /* Icon pulse */
   .fa-pulse {
-    display: inline-block;
-    -moz-animation: pulse 2s infinite linear;
-    -o-animation: pulse 2s infinite linear;
-    -webkit-animation: pulse 2s infinite linear;
-    animation: pulse 2s infinite linear;
+    -webkit-animation: pulse 2s linear infinite;
+    animation: pulse 2s linear infinite;
   }
 
+  /* PULSE ICON*/
+
   @-webkit-keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    50% {
+      -webkit-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+
+    100% {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
   }
-  @-moz-keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-o-keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-  }
-  @-ms-keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-  }
+
   @keyframes pulse {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
+    0% {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+
+    50% {
+      -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+      transform: scale(0.8);
+    }
+
+    100% {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1);
+    }
   }
 </style>
