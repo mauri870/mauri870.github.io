@@ -4,7 +4,7 @@ export default {
       {
         name: 'Cloudradioo App',
         link: 'http://github.com/devfake/cloudradioo-app',
-        description: 'Cloudradioo App is an desktop application builded with Electron, VueJs and Vuex that plays randomly all top 50 songs from the soundcloud charts.',
+        description: 'Cloudradioo App is a desktop application builded with Electron, VueJs and Vuex that plays randomly all top 50 songs from the soundcloud charts.',
         image: require('../assets/img/portfolio/cloudradioo-app.png')
       },
       {
