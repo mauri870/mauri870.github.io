@@ -30,7 +30,7 @@ export default {
 </script>
 
 <style>
-  @import url(http://fonts.googleapis.com/css?family=Ubuntu:400,700);
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
 
   body {
     font-family: 'Ubuntu', sans-serif;
