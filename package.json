@@ -5,6 +5,7 @@
   "scripts": {
     "postinstall": "bower i",
     "dev": "node build/dev-server.js",
+    "production": "npm run build && git subtree push --prefix dist origin master",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
