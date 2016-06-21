@@ -1,10 +1,10 @@
-import $ from 'jquery'
-import Vue from 'vue'
-import Site from './Site'
-
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap'
 import 'font-awesome/css/font-awesome.css'
+
+import $ from 'jquery'
+import Vue from 'vue'
+import Site from './Site'
 
 // Init tooltips
 $(document).ready(() => { $('[data-toggle="tooltip"]').tooltip() })
