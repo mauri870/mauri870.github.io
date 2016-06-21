@@ -3,9 +3,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
-          <h4>HELLO PEOPLE, MY NAME IS</h4>
-          <h1>PAUL SILVA</h1>
-          <h4>WEB DESIGNER, DEVELOPER & GAME ADDICT</h4>
+          <h4>My skills</h4>
+          <h1 class="typed"></h1>
         </div>
       </div>
     </div>
@@ -14,7 +13,20 @@
 </template>
 
 <script>
-export default {}
+import $ from 'jquery'
+import '../../bower_components/typed.js/js/typed'
+
+export default {
+  ready () {
+    $(function () {
+      $('.typed').typed({
+        strings: ['LARAVEL', 'VUEJS', 'PHP', 'ELECTRON', 'MYSQL', 'REST API\'S', 'BOWER', 'COMPOSER', 'NPM', 'LINUX', 'GULP', 'AWS', ':)'],
+        typeSpeed: 0,
+        loop: true
+      })
+    })
+  }
+}
 </script>
 
 <style scoped>
