@@ -9,13 +9,11 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">M</a>
+        <a class="navbar-brand logo" href="#navbar-menu">M</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#works">Works</a></li>
+          <li><a href="http://github.com/mauri870" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
         </ul>
       </div><!--/.nav-collapse -->
     </div>
@@ -43,6 +41,10 @@ export default {
 <style>
   .navbar-brand {
     font-weight: 700;
+  }
+
+  .navbar-brand > .logo {
+    font-size: x-large;
   }
 
   .navbar-default .navbar-brand {
