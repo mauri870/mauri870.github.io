@@ -91,27 +91,4 @@ export default {
   .mb {
     margin-bottom: 80px;
   }
-
-  .navbar-brand {
-    font-weight: 700;
-  }
-
-  .navbar-default .navbar-brand {
-    color: #1abc9c;
-  }
-
-  .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
-  }
-
-  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #1abc9c;
-    background-color: transparent;
-    border-bottom: 2px solid #1abc9c
-  }
-
-  .navbar-default .navbar-nav > li > a {
-    color: #1abc9c;
-  }
 </style>
