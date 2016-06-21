@@ -3,9 +3,9 @@
   "author": "Mauri de Souza Nunes <mauri870@gmail.com>",
   "private": true,
   "scripts": {
+    "postinstall": "bower i",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
-    "test": "",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
