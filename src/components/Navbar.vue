@@ -44,7 +44,7 @@ export default {
   }
 
   .navbar-brand > .logo {
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   .navbar-default .navbar-brand {
@@ -67,7 +67,7 @@ export default {
     border-bottom: 2px solid #1abc9c
   }
 
-  .navbar-default .navbar-nav > li > a {
+  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-header > a:hover {
     color: #1abc9c;
   }
 </style>
