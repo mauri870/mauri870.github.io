@@ -1,6 +1,6 @@
 <template>
   <!-- Static navbar -->
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="navbar navbar-default navbar-fixed-top" id="navbar-menu" role="navigation">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -9,7 +9,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">INSTANT</a>
+        <a class="navbar-brand" href="index.html">M</a>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
@@ -23,8 +23,49 @@
 </template>
 
 <script>
-export default {}
+import $ from 'jquery'
+
+export default {
+  ready () {
+    $(window).on('scroll', function () {
+      let navbar = $('#navbar-menu')
+      if ($(this).scrollTop() >= $('#control-navbar').position().top) {
+        navbar.addClass('nav-second-color')
+      } else {
+        navbar.removeClass('nav-second-color')
+      }
+    })
+  }
+
+}
 </script>
 
-<style scoped>
+<style>
+  .navbar-brand {
+    font-weight: 700;
+  }
+
+  .navbar-default .navbar-brand {
+    color: #1abc9c;
+  }
+
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+  }
+
+  .nav-second-color {
+    background-color:#fff;
+    color:#444;
+  }
+
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #1abc9c;
+    background-color: transparent;
+    border-bottom: 2px solid #1abc9c
+  }
+
+  .navbar-default .navbar-nav > li > a {
+    color: #1abc9c;
+  }
 </style>
