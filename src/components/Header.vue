@@ -4,7 +4,9 @@
       <div class="row">
         <div class="col-lg-6 col-lg-offset-3">
           <h4>My skills</h4>
-          <h1 class="typed"></h1>
+          <h1>
+            <span class="typed"></span>
+          </h1>
         </div>
       </div>
     </div>
@@ -29,7 +31,29 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+  .typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+  }
+  @keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+
   #headerwrap {
     background: url(../assets/img/work.jpg) no-repeat center top;
     margin-top: -70px;
