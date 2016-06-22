@@ -1,4 +1,5 @@
 <template>
+  <fake-loader></fake-loader>
 
   <navbar-site></navbar-site>
 
@@ -12,6 +13,7 @@
 </template>
 
 <script>
+import FakeLoader from './components/fakeloader.vue'
 import NavbarSite from './components/Navbar.vue'
 import HeaderWrap from './components/Header.vue'
 import MyPortfolio from './components/Portfolio.vue'
@@ -20,6 +22,7 @@ import FooterSite from './components/Footer.vue'
 
 export default {
   components: {
+    FakeLoader,
     NavbarSite,
     HeaderWrap,
     MyPortfolio,
