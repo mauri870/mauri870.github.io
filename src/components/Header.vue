@@ -22,7 +22,7 @@ export default {
   ready () {
     $(function () {
       $('.typed').typed({
-        strings: ['LARAVEL', 'VUEJS', 'LUMEN', 'GIT', 'PHP', 'WEBPACK', 'ELECTRON', 'MYSQL', 'SOLID', 'REST API\'S', 'BOWER', 'COMPOSER', 'NPM', 'LINUX', 'GULP', 'AWS'],
+        strings: ['LARAVEL', 'VUEJS', 'LUMEN', 'GIT', 'PHP', 'WEBPACK', 'ELECTRON', 'MYSQL', 'SOLID', 'REST API\'S', 'HTML', 'CSS', 'BOOTSTRAP', 'BOWER', 'COMPOSER', 'NPM', 'LINUX', 'GULP', 'AWS'],
         typeSpeed: 0,
         loop: true
       })
