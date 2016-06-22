@@ -14,6 +14,12 @@ export default {
         image: require('../assets/img/portfolio/laravel-package.png')
       },
       {
+        name: 'artesaos/laravel-docs',
+        link: 'https://github.com/artesaos/laravel-docs',
+        description: 'Translation of Laravel 5 docs to PT-BR',
+        image: require('../assets/img/portfolio/artesaos-package.png')
+      },
+      {
         name: 'artesaos/laravel-installer',
         link: 'https://github.com/artesaos/laravel-installer',
         description: 'Install laravel framework with any version you want',
