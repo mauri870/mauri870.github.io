@@ -14,7 +14,8 @@
     "bootstrap": "^3.3.6",
     "font-awesome": "^4.6.3",
     "jquery": "^2.2.4",
-    "vue": "^1.0.21"
+    "vue": "^1.0.21",
+    "vuex": "^0.8.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
