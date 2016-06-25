@@ -3,13 +3,13 @@
     <div class="container">
       <div class="row centered">
         <div class="col-lg-4">
-          <p><b>{{ info.phrase | uppercase }}</b></p>
+          <p><b>{{ phrase | uppercase }}</b></p>
         </div>
 
         <div class="col-lg-4"></div>
 
         <div class="col-lg-4">
-          <p><a href="mailto:{{ info.email }}">{{ info.email }}</a></p>
+          <p><a href="mailto:{{ email }}">{{ email }}</a></p>
         </div>
       </div>
       <div class="col-sm-12 text-center">
@@ -20,12 +20,11 @@
 </template>
 
 <script>
-import InfoStore from '../store/info'
-
 export default {
-  data () {
-    return {
-      info: InfoStore.state
+  vuex: {
+    getters: {
+      phrase: ({info}) => info.phrase,
+      email: ({info}) => info.email
     }
   }
 }

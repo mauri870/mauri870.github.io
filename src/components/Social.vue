@@ -11,12 +11,10 @@
 </template>
 
 <script>
-  import SocialStore from '../store/social'
-
   export default {
-    data () {
-      return {
-        networks: SocialStore.state.networks
+    vuex: {
+      getters: {
+        networks: ({social}) => social.networks
       }
     }
   }

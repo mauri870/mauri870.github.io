@@ -20,12 +20,10 @@
 </template>
 
 <script>
-import PortfolioStore from '../store/portfolio'
-
 export default {
-  data () {
-    return {
-      projects: PortfolioStore.state.projects
+  vuex: {
+    getters: {
+      projects: ({projects}) => projects.projects
     }
   }
 }
