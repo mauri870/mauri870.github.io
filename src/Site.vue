@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import FakeLoader from './components/fakeloader.vue'
+import FakeLoader from './components/Fakeloader.vue'
 import NavbarSite from './components/Navbar.vue'
 import HeaderWrap from './components/Header.vue'
 import MyPortfolio from './components/Portfolio.vue'
