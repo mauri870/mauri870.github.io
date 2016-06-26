@@ -20,19 +20,18 @@
   }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   #social {
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: #f2f2f2;
-  }
-
-  #social i {
-    font-size: 40px;
-    color: #4a4a4a
-  }
-
-  #social i:hover {
-    color: #1abc9c
+    
+    i {
+      font-size: 40px;
+      color: #4a4a4a;
+      &:hover {
+        color: #1abc9c
+      }
+    }
   }
 </style>

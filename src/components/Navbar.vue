@@ -38,36 +38,35 @@ export default {
 }
 </script>
 
-<style scoped>
-  .navbar-brand {
-    font-weight: 700;
-  }
-
-  .navbar-brand > .logo {
-    font-size: xx-large;
-  }
-
-  .navbar-default .navbar-brand {
-    color: #1abc9c;
-  }
+<style lang="scss" scoped>
+  $default-color: #1abc9c;
 
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
+    
+    .navbar-brand {
+      color: $default-color;
+      font-weight: 700;
+    }
+
+    .logo {
+      font-size: xx-large;
+    }
+    
+    .navbar-nav {
+      a {
+        color: $default-color;
+        background-color: transparent;
+        &:hover {
+          color: $default-color;
+        }
+      }
+    }
   }
 
   .nav-second-color {
     background-color:#fff;
     color:#444;
-  }
-
-  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #1abc9c;
-    background-color: transparent;
-    border-bottom: 2px solid #1abc9c
-  }
-
-  .navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-header > a:hover {
-    color: #1abc9c;
   }
 </style>

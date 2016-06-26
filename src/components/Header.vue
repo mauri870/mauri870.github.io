@@ -31,29 +31,7 @@ export default {
 }
 </script>
 
-<style>
-  .typed-cursor{
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-  }
-  @keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-webkit-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-moz-keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
-  }
-
+<style lang="scss">
   #headerwrap {
     background: url(../assets/img/work.jpg) no-repeat center top;
     margin-top: -70px;
@@ -73,19 +51,43 @@ export default {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    
+  .typed-cursor{
+      opacity: 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite;
+    }
+
+    h1 {
+      color:#ffffff;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      letter-spacing: 4px;
+      font-size: 80px;
+      font-weight: bold;
+    }
+
+    h4 {
+      font-weight: 400;
+      color: #ffffff;
+    }
   }
 
-  #headerwrap h1 {
-    color:#ffffff;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    letter-spacing: 4px;
-    font-size: 80px;
-    font-weight: bold;
+  @keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
   }
-
-  #headerwrap h4 {
-    font-weight: 400;
-    color: #ffffff
+  @-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
   }
 </style>

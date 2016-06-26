@@ -29,7 +29,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   .description {
     min-height: 100px;
     font-weight: 500;
@@ -41,10 +41,11 @@ export default {
 
   .gallery {
     margin-top: 30px;
-  }
-
-  .gallery img:hover {
-    opacity: 0.4;
+    img {
+      &:hover {
+        opacity: 0.4;
+      }
+    }
   }
 
   /* Icon pulse */

@@ -30,15 +30,15 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   #footerwrap {
     padding-top: 70px;
     padding-bottom: 50px;
     background-color: #2f2f2f;
-  }
-
-  #footerwrap p {
-    color: #f2f2f2;
-    margin-left: 10px;
+    
+    p {
+      color: #f2f2f2;
+      margin-left: 10px;
+    }
   }
 </style>

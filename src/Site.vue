@@ -32,66 +32,65 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
   @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
 
-  body {
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    font-size: 16px;
+  $default-font: 'Ubuntu', sans-serif;
+  $default-font-weight: 400;
+  $default-font-size: 16px;
+  $default-color: #1abc9c;
 
+  body{
+    font-family: $default-font;
+    font-weight: $default-font-weight;
+    font-size: $default-font-size;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
-  }
 
-  h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    color: #4a4a4a;
-  }
+    ::-moz-selection {
+      background: #f2c2c9;
+      color: black;
+      text-shadow: none;
+    }
 
-  a {
-    color: white;
-  }
+    ::selection {
+      background: #16a085;
+      color: black;
+      text-shadow: none;
+    }
 
-  a:hover {
-    color: #1abc9c;
-    text-decoration: none;
-  }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+      color: #4a4a4a;
+    }
 
-  ::-moz-selection {
-    background: #f2c2c9;
-    color: black;
-    text-shadow: none;
-  }
+    a {
+      color: white;
+      &:hover {
+        color: $default-color;
+        text-decoration: none;
+      }
+    }
 
-  ::selection {
-    background: #16a085;
-    color: black;
-    text-shadow: none;
-  }
+    hr {
+      display: block;
+      height: 1px;
+      border: 0;
+      border-top: 1px solid #ccc;
+      margin: 1em 0;
+      padding: 0;
+    }
 
-  /*
-   * A better looking default horizontal rule
-   */
+    .centered {
+      text-align: center
+    }
 
-  hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-  }
+    .mt {
+      margin-top: 80px;
+    }
 
-  .centered {
-    text-align: center
-  }
-
-  .mt {
-    margin-top: 80px;
-  }
-
-  .mb {
-    margin-bottom: 80px;
+    .mb {
+      margin-bottom: 80px;
+    } 
   }
 </style>
