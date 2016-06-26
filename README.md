@@ -1,6 +1,11 @@
 # mauri870.github.io
 
-My personal website built with vuejs and webpack
+My personal website built with:
+ - VueJS
+ - Webpack
+ - Vuex
+ - SCSS
+ - Jade
 
 ## Build Setup
 
