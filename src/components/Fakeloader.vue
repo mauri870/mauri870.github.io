@@ -1,5 +1,5 @@
-<template>
-  <div id="fakeLoader"></div>
+<template lang="jade">
+    #fakeLoader
 </template>
 
 <script>

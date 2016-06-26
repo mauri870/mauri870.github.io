@@ -1,13 +1,10 @@
-<template>
-  <div id="social">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-lg-3" v-for="network in networks">
-          <a :href="network.link" target="_blank"><i class="fa fa-{{network.name}}"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
+<template lang="jade">
+  #social
+    .container
+      .row.centered
+        .col-lg-3(v-for="network in networks")
+          a(:href="network.link" target="_blank")
+            i(class="fa fa-{{network.name}}")
 </template>
 
 <script>
@@ -20,7 +17,7 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
   #social {
     padding-top: 50px;
     padding-bottom: 50px;

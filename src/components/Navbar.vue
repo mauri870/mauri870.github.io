@@ -1,23 +1,19 @@
-<template>
+<template lang="jade">
   <!-- Static navbar -->
-  <div class="navbar navbar-default navbar-fixed-top" id="navbar-menu" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand logo" href="/">M</a>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="http://github.com/mauri870" target="_blank"><i class="fa fa-github fa-2x"></i></a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div>
-  </div>
+  .navbar.navbar-default.navbar-fixed-top#navbar-menu(role="navigation")
+    .container
+      .navbar-header
+        button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-collapse")
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand.logo(href="/") M
+      .navbar-collapse.collapse
+        ul.nav.navbar-nav.navbar-right
+          li
+            a(href="http://github.com/mauri870" target="_blank")
+              i.fa.fa-github.fa-2x
 </template>
 
 <script>

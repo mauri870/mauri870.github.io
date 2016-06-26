@@ -1,17 +1,12 @@
-<template>
-  <div id="headerwrap">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-lg-offset-3">
-          <h4>My skills</h4>
-          <h1>
-            <span class="typed"></span>
-          </h1>
-        </div>
-      </div>
-    </div>
-  </div>
-  <span id="control-navbar"></span>
+<template lang="jade">
+  #headerwrap
+    .container
+      .row
+        .col-lg-6.col-lg-offset-3
+          h3 My skills
+          h1
+            span.typed
+  .span#control-navbar
 </template>
 
 <script>
@@ -69,7 +64,7 @@ export default {
       font-weight: bold;
     }
 
-    h4 {
+    h3 {
       font-weight: 400;
       color: #ffffff;
     }
