@@ -1,15 +1,15 @@
-<template>
-  <fake-loader></fake-loader>
+<template lang="jade">
+  fake-loader
 
-  <navbar-site></navbar-site>
+  navbar-site
 
-  <header-wrap></header-wrap>
+  header-wrap
 
-  <my-portfolio></my-portfolio>
+  my-portfolio
 
-  <social-section></social-section>
-
-  <footer-site></footer-site>
+  social-section
+    
+  footer-site
 </template>
 
 <script>
