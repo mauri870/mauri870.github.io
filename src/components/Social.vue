@@ -19,8 +19,7 @@
 
 <style lang="scss">
   #social {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 50px;
     background-color: #f2f2f2;
     
     i {
