@@ -3,9 +3,7 @@
 
   navbar-site
 
-  header-wrap
-
-  my-portfolio
+  router-view  
 
   social-section
     
