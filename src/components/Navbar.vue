@@ -8,7 +8,7 @@
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        a.navbar-brand.logo(href="/") M
+        a.navbar-brand.logo(v-link="{ path: '/' }") M
       .navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
           li
