@@ -33,13 +33,8 @@ export default {
 </script>
 
 <style lang="scss">
-  @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700);
-
-  $default-font: 'Ubuntu', sans-serif;
-  $default-font-weight: 400;
-  $default-font-size: 16px;
-  $default-color: #1abc9c;
-
+  @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700), "assets/sass/variables.scss";
+  
   body{
     font-family: $default-font;
     font-weight: $default-font-weight;

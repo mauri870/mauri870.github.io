@@ -35,7 +35,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-  $default-color: #1abc9c;
+  @import "../assets/sass/variables.scss";
 
   .navbar-default {
     background-color: transparent;
