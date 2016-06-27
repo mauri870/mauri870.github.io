@@ -27,15 +27,13 @@ export default {
 </script>
 
 <style lang="scss">
+  @import "../assets/sass/mixins.scss";
+
   #headerwrap {
+    @include content-default
     background: url(../assets/img/work.jpg) no-repeat center top;
-    margin-top: -70px;
-    padding-top: 250px;
-    text-align:center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 650px;
-    width: 100%;
 
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
