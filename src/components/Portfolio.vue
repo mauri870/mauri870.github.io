@@ -7,40 +7,26 @@
           | open source
         p Some projects that I have worked on:
 
-        .col-sm-4.gallery(v-for="project in projects")
-          h3 {{ project.name }}
-          a(:href="project.link" target="_blank")
-            img.img-responsive(:src="project.image" class="img-responsive")
-          p.description {{ project.description }}
+        project(v-for="project in projects", :item="project") 
 </template>
 
 <script>
+import Project from './partials/project'
 export default {
   vuex: {
     getters: {
       projects: ({projects}) => projects.projects
     }
+  },
+  components: {
+    Project
   }
 }
 </script>
 
 <style lang="scss" scoped>
-  .description {
-    min-height: 100px;
-    font-weight: 500;
-  }
-
   .heart {
     color: red;
-  }
-
-  .gallery {
-    margin-top: 30px;
-    img {
-      &:hover {
-        opacity: 0.4;
-      }
-    }
   }
 
   /* Icon pulse */
