@@ -3,7 +3,14 @@
     .container
       .row
         .col-lg-6.col-lg-offset-3
-          h3 Sorry but the page you are looking for could not be found
+          h1 
+            i.fa.fa-warning.fa-2x
+            br 
+            |  Sorry but the page you are looking for could not be found
+          a(v-link="{ path : '/' }")
+            button.btn.btn-default.btn-lg 
+              i.fa.fa-home
+              |  Take me home
   .span#control-navbar     
 </template>
 
@@ -17,9 +24,12 @@
   #content {
     @include content-default
 
-    h3 {
+    h1 {
       font-weight: 400;
       color: #000000;
+      i {
+        color: #FF0000;
+      }
     }
   }
 </style>
