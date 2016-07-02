@@ -8,6 +8,8 @@
     "production": "npm run build && git add dist && git commit -m \"Update site for production\" && git subtree push --prefix dist origin master",
     "build": "node build/build.js",
     "unit": "karma start test/unit/karma.conf.js --single-run",
+    "e2e": "node test/e2e/runner.js",
+    "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
   },
   "dependencies": {
@@ -40,6 +42,10 @@
     "sinon": "^1.17.3",
     "chai": "^3.5.0",
     "sinon-chai": "^2.8.0",
+    "chromedriver": "^2.21.2",
+    "cross-spawn": "^2.1.5",
+    "nightwatch": "^0.8.18",
+    "selenium-server": "2.53.0",
     "isparta-loader": "^2.0.0",
     "eslint": "^2.10.2",
     "eslint-config-standard": "^5.1.0",
