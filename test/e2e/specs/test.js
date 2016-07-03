@@ -2,9 +2,7 @@ module.exports = {
   'mauri870.github.io e2e tests': function (browser) {
     browser
     .url('http://localhost:8080')
-      .waitForElementVisible('#fakeLoader', 5000)
-      .pause(1000)
-      .waitForElementVisible('#headerwrap', 5000)
+      .waitForElementVisible('#headerwrap', 1000)
       .assert.title('Mauri de Souza Nunes - Website')
       .assert.containsText('h3', 'My skills')
       .assert.elementPresent('.logo')
