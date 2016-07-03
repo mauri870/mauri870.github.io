@@ -1,5 +1,7 @@
 # mauri870.github.io
 
+[![Build Status](https://travis-ci.org/mauri870/mauri870.github.io.svg?branch=develop)](https://travis-ci.org/mauri870/mauri870.github.io)
+
 My personal website built with:
  - VueJS
  - Webpack
