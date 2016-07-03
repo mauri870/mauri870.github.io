@@ -13,6 +13,8 @@ module.exports = {
     browser
     .url('http://localhost:8080/!#/whatever')
       .assert.containsText('h1', 'Sorry but the page you are looking for could not be found')
+      .click('#content .col-lg-6 a')
+      .assert.containsText('h3', 'My skills', 'Test if Take me Home link return to index page')
       .end()
   }
 }
