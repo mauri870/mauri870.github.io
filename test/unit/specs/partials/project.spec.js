@@ -15,8 +15,8 @@ describe('project.vue', () => {
         }
       }
     }).$mount()
-    expect(vm.$el.querySelector('.gallery h3').textContent).to.contain('test/test')
-    expect(vm.$el.querySelector('.gallery a').href).to.contain('https://test.dev')
-    expect(vm.$el.querySelector('.gallery p.description').textContent).to.contain('A simple test')
+    expect(vm.$el.querySelector('.project h3').textContent).to.contain('test/test')
+    expect(vm.$el.querySelector('.project a').href).to.contain('https://test.dev')
+    expect(vm.$el.querySelector('.project p.description').textContent).to.contain('A simple test')
   })
 })

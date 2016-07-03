@@ -1,5 +1,5 @@
 <template lang="jade">
-  .col-sm-4.gallery()
+  .col-sm-4.project
     h3 {{ item.name }}
     a(:href="item.link" target="_blank")
       img.img-responsive(:src="item.image" class="img-responsive")
@@ -18,7 +18,7 @@
     font-weight: 500;
   } 
 
-  .gallery {
+  .project {
     margin-top: 30px;
     img {
       &:hover {

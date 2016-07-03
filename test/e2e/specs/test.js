@@ -1,12 +1,12 @@
 module.exports = {
-  'mauri870.github.io e2e tests': function (browser) {
+  'mauri870.github.io e2e test index': function (browser) {
     browser
     .url('http://localhost:8080')
       .waitForElementVisible('#headerwrap', 1000)
       .assert.title('Mauri de Souza Nunes - Website')
       .assert.containsText('h3', 'My skills')
       .assert.elementPresent('.logo')
-      .assert.elementCount('.gallery', 6)
+      .assert.elementCount('.project', 6)
       .end()
   },
   'mauri870.github.io e2e test 404': function (browser) {
