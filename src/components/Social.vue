@@ -2,6 +2,9 @@
   #social
     .container
       .row.centered
+        .col-lg-12
+          h2 Stay connected!
+          br
         .col-lg-3(v-for="network in networks")
           a(:href="network.link" target="_blank")
             i(class="fa fa-{{network.name}}")
