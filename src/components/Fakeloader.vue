@@ -16,4 +16,8 @@ export default {
 
 <style>
   @import '../../bower_components/fakeLoader/fakeLoader.css';
+
+  #fakeLoader {
+    z-index: 999999 !important;
+  }
 </style>
