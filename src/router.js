@@ -6,9 +6,7 @@ import NotFoundPage from './pages/404.vue'
 
 Vue.use(VueRouter)
 
-var router = new VueRouter({
-  history: true
-})
+var router = new VueRouter()
 
 router.map({
   '/': {
