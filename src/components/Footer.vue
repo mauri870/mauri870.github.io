@@ -19,7 +19,7 @@
           i.fa.fa-heart.heart
           |  on top of VueJs, Vuex, SCSS, Jade and Webpack     
       .col-sm-12.text-center
-        img(src="https://travis-ci.org/mauri870/mauri870.github.io.svg?branch=develop")
+        img(src="https://api.travis-ci.org/mauri870/mauri870.github.io.svg?branch=develop")
 </template>
 
 <script>
