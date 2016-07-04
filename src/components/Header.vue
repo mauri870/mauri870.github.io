@@ -6,6 +6,15 @@
           h3 My skills
           h1
             span.typed
+      .row.curriculum
+        .col-md-8.col-md-offset-2
+          .btn-group.btn-group-justified
+            a.btn.btn-site-color(href="static/docs/curriculum-en.pdf"  target="_blank")
+                |  Curriculum EN
+            a.btn.btn-site-color(href="#")
+                i.fa.fa-file-text    
+            a.btn.btn-site-color(href="static/docs/curriculum-pt.pdf" target="_blank")
+                |  Curriculum PT-BR
   .span#control-navbar
 </template>
 
@@ -45,8 +54,21 @@ export default {
     -o-background-size: cover;
     background-size: cover;
 
+    .curriculum {
+      .btn-site-color {
+        @include btn-site-color;
+      }
+
+      a {
+        font-size: 100%;
+        &:visited {
+          color: #ffffff;
+        }
+      }
+    }
+
     
-  .typed-cursor{
+    .typed-cursor{
       opacity: 1;
       -webkit-animation: blink 0.7s infinite;
       -moz-animation: blink 0.7s infinite;
