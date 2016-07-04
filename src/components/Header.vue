@@ -10,11 +10,11 @@
         .col-md-8.col-md-offset-2
           .btn-group.btn-group-justified
             a.btn.btn-site-color(href="static/docs/curricula/curriculum-en.pdf"  target="_blank")
-                |  Curriculum EN
+                | Curriculum EN
             a.btn.btn-site-color(href="#")
                 i.fa.fa-file-text    
             a.btn.btn-site-color(href="static/docs/curricula/curriculum-pt.pdf" target="_blank")
-                |  Curriculum PT-BR
+                | Curriculum PT-BR
   .span#control-navbar
 </template>
 
