@@ -5,7 +5,7 @@
   "scripts": {
     "postinstall": "bower i",
     "dev": "node build/dev-server.js",
-    "production": "npm run build && git add dist && git commit -m \"Update site for production\" && git subtree push --prefix dist origin master",
+    "production": "npm run test && npm run build && git add dist && git commit -m \"Update site for production\" && git subtree push --prefix dist origin master",
     "build": "node build/build.js",
     "unit": "karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
