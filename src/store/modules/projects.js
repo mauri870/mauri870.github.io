@@ -2,9 +2,15 @@ export default {
   state: {
     projects: [
       {
+        name: 'Php Watson SDK',
+        link: 'http://github.com/php-watson/client-sdk',
+        description: 'A PHP SDK for the IBM Watson Services',
+        image: require('../../assets/img/portfolio/php-watson.png')
+      },
+      {
         name: 'Cloudradioo App',
         link: 'http://github.com/devfake/cloudradioo-app',
-        description: 'Cloudradioo App is a desktop application builded with Electron, VueJs and Vuex that plays randomly all top 50 songs from the soundcloud charts.',
+        description: 'Cloudradioo App is a desktop application builded with Electron, VueJs and Vuex that plays randomly all top 50 songs from the soundcloud charts',
         image: require('../../assets/img/portfolio/cloudradioo-app.png')
       },
       {
