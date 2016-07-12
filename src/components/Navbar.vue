@@ -9,7 +9,7 @@
           span.icon-bar
           span.icon-bar
         a.navbar-brand.logo(v-link="{ path: '/' }") M
-        a#hiring(href="#" @click.prevent="clickHireMe") Hire Me!
+        a#hiring(href="#" @click.prevent="clickHireMe") Contact Me!
       .navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
           li
