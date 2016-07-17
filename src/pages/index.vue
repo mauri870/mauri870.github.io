@@ -10,6 +10,7 @@
     import MyPortfolio from '../components/Portfolio.vue'
     
     export default {
+      name: 'Index'
       components: {
         HeaderWrap,
         MyPortfolio
