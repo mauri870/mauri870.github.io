@@ -7,15 +7,17 @@
           br
         .col-lg-3(v-for="network in networks")
           a(:href="network.link" target="_blank")
-            i(class="fa fa-{{network.name}}")
+            i(:class="network.icon")
 </template>
 
 <script>
+  import { mapGetters } from 'vuex'
+
   export default {
-    vuex: {
-      getters: {
-        networks: ({social}) => social.networks
-      }
+    computed: {
+      ...mapGetters({
+        networks: 'networks'
+      })
     }
   }
 </script>
