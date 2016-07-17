@@ -4,10 +4,10 @@
 
     navbar-site
 
-    main-content  
+    main-content
 
     social-section
-      
+
     footer-site
 </template>
 
