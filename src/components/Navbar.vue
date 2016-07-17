@@ -18,13 +18,14 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import $ from 'jquery'
 
 export default {
-  vuex: {
-    getters: {
-      email: ({info}) => info.email
-    }
+  computed: {
+    ...mapGetters({
+      email: 'infoEmail'
+    })
   },
   methods: {
     clickHireMe () {
