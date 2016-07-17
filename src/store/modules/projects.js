@@ -45,5 +45,8 @@ export default {
       }
     ]
   },
-  mutations: {}
+  mutations: {},
+  getters: {
+    projects: state => state.projects
+  }
 }

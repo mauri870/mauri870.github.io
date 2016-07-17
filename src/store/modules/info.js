@@ -4,5 +4,9 @@ export default {
     email: 'mauri870@gmail.com',
     phone: '+55 54 8118-9792'
   },
-  mutations: {}
+  mutations: {},
+  getters: {
+    infoPhrase: state => state.phrase,
+    infoEmail: state => state.email
+  }
 }
