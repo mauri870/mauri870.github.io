@@ -12,11 +12,13 @@
 
 <script>
 import Project from './partials/project'
+import { mapGetters } from 'vuex'
+
 export default {
-  vuex: {
-    getters: {
-      projects: ({projects}) => projects.projects
-    }
+  computed: {
+    ...mapGetters({
+      projects: 'projects'
+    })
   },
   components: {
     Project
