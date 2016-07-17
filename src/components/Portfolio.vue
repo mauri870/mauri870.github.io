@@ -15,6 +15,7 @@ import Project from './partials/project'
 import { mapGetters } from 'vuex'
 
 export default {
+  name: 'Portfolio',
   computed: {
     ...mapGetters({
       projects: 'projects'

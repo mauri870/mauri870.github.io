@@ -7,6 +7,7 @@ import $ from 'jquery'
 import '../../bower_components/fakeLoader/fakeLoader.min'
 
 export default {
+  name: 'Fakeloader',
   mounted () {
     $(document).ready(function () {
       // Init Fakeloader
