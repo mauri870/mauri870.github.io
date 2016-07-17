@@ -37,11 +37,9 @@ export default {
     ...mapGetters({
       phrase: 'infoPhrase',
       email: 'infoEmail'
-    })
-  },
-  data () {
-    return {
-      mailto: 'mailto:' + this.email
+    }),
+    mailto () {
+      return 'mailto:' + this.email
     }
   }
 }
