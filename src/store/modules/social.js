@@ -7,5 +7,8 @@ export default {
       {name: 'steam', link: 'http://steamcommunity.com/id/mauri870', icon: 'fa fa-steam'}
     ]
   },
-  mutations: {}
+  mutations: {},
+  getters: {
+    networks: state => state.networks
+  }
 }
