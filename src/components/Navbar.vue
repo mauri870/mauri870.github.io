@@ -8,7 +8,7 @@
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        a.navbar-brand.logo(v-link="{ path: '/' }") M
+        a.navbar-brand.logo(href="/") M
         a#hiring(href="#" @click.prevent="clickHireMe") Contact Me!
       .navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
@@ -31,7 +31,7 @@ export default {
       window.location.href = `mailto:${this.email}`
     }
   },
-  ready () {
+  mounted () {
     $(window).on('scroll', function () {
       let navbar = $('#navbar-menu')
       if ($(this).scrollTop() >= $('#control-navbar').position().top) {
