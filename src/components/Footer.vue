@@ -2,6 +2,13 @@
   #footerwrap
     .container
       .row.centered
+        .col-lg-12
+          h2
+            sup
+              i.fa.fa-quote-left
+            |  Work hard to make things happen
+            sup
+              i.fa.fa-quote-right
         .col-lg-4
           p
             b {{ phrase | uppercase }}
@@ -41,11 +48,21 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../assets/sass/variables.scss';
+
   #footerwrap {
     padding-top: 70px;
     padding-bottom: 50px;
     background-color: #2f2f2f;
-    
+
+    h2 {
+      color: white;
+
+      sup {
+        color: $default-color;
+      }
+    }
+
     p {
       color: #f2f2f2;
       margin-left: 10px;
