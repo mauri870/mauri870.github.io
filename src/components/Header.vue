@@ -27,6 +27,7 @@ import $ from 'jquery'
 import '../../bower_components/typed.js/js/typed'
 
 export default {
+  name: 'Header',
   mounted () {
     $(function () {
       $('.typed').typed({

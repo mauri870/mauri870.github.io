@@ -22,6 +22,7 @@ import { mapGetters } from 'vuex'
 import $ from 'jquery'
 
 export default {
+  name: 'Navbar',
   computed: {
     ...mapGetters({
       email: 'infoEmail'
