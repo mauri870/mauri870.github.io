@@ -1,12 +1,14 @@
 <template lang="jade">
-  header-wrap
+  div
+    header-wrap
 
-  my-portfolio
+    my-portfolio
 </template>
 
 <script>
     import HeaderWrap from '../components/Header.vue'
     import MyPortfolio from '../components/Portfolio.vue'
+    
     export default {
       components: {
         HeaderWrap,
