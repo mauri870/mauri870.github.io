@@ -8,7 +8,7 @@
         .col-lg-4
         .col-lg-4
           p
-            a(href="mailto:{{ email }}") {{ email }}
+            a(:href="mailto") {{ email }}
       .col-sm-12.text-center
         p Find the 
           i.fa.fa-code
@@ -23,11 +23,18 @@
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
-  vuex: {
-    getters: {
-      phrase: ({info}) => info.phrase,
-      email: ({info}) => info.email
+  computed: {
+    ...mapGetters({
+      phrase: 'infoPhrase',
+      email: 'infoEmail'
+    })
+  },
+  data () {
+    return {
+      mailto: 'mailto:' + this.email
     }
   }
 }
