@@ -1,24 +1,25 @@
 <template lang="jade">
-  #headerwrap
-    .container
-      .row
-        .col-lg-6.col-lg-offset-3
-          h3 My skills
-          h1
-            span.typed
-      .row.curriculum
-        .col-md-8.col-md-offset-2
-          .btn-group.btn-group-justified
-            a.btn.btn-site-color(href="static/docs/curricula/curriculum-en.pdf" target="_blank")
-                i.fa.fa-file-text
-                |  Curriculum EN
-            a.btn.btn-site-color(href="https://github.com/mauri870/certificados" target="_blank")
-                i.fa.fa-file-text
-                |  Certificates
-            a.btn.btn-site-color(href="static/docs/curricula/curriculum-pt.pdf" target="_blank")
-                i.fa.fa-file-text
-                |  Curriculum PT-BR
-  .span#control-navbar
+  div
+    #headerwrap
+      .container
+        .row
+          .col-lg-6.col-lg-offset-3
+            h3 My skills
+            h1
+              span.typed
+        .row.curriculum
+          .col-md-8.col-md-offset-2
+            .btn-group.btn-group-justified
+              a.btn.btn-site-color(href="static/docs/curricula/curriculum-en.pdf" target="_blank")
+                  i.fa.fa-file-text
+                  |  Curriculum EN
+              a.btn.btn-site-color(href="https://github.com/mauri870/certificados" target="_blank")
+                  i.fa.fa-file-text
+                  |  Certificates
+              a.btn.btn-site-color(href="static/docs/curricula/curriculum-pt.pdf" target="_blank")
+                  i.fa.fa-file-text
+                  |  Curriculum PT-BR
+    .span#control-navbar
 </template>
 
 <script>
@@ -26,7 +27,7 @@ import $ from 'jquery'
 import '../../bower_components/typed.js/js/typed'
 
 export default {
-  ready () {
+  mounted () {
     $(function () {
       $('.typed').typed({
         strings: ['LARAVEL', 'VUEJS', 'LUMEN', 'GIT', 'PHP', 'WEBPACK', 'ELECTRON', 'MYSQL', 'SOLID', 'REST API\'S', 'HTML', 'CSS', 'BOOTSTRAP', 'BOWER', 'COMPOSER', 'NPM', 'LINUX', 'GULP', 'AWS'],
