@@ -1,31 +1,31 @@
 <template lang="jade">
-  fake-loader
+  div
+    fake-loader
 
-  navbar-site
+    navbar-site
 
-  router-view  
+    main-content  
 
-  social-section
-    
-  footer-site
+    social-section
+      
+    footer-site
 </template>
 
 <script>
 import FakeLoader from './components/Fakeloader.vue'
 import NavbarSite from './components/Navbar.vue'
-import HeaderWrap from './components/Header.vue'
-import MyPortfolio from './components/Portfolio.vue'
 import SocialSection from './components/Social.vue'
 import FooterSite from './components/Footer.vue'
+import MainContent from './pages/index.vue'
 
 export default {
+  name: 'Site',
   components: {
     FakeLoader,
     NavbarSite,
-    HeaderWrap,
-    MyPortfolio,
     SocialSection,
-    FooterSite
+    FooterSite,
+    MainContent
   }
 }
 </script>
