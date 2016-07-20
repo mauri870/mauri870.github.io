@@ -5,8 +5,7 @@ import store from 'src/store'
 describe('Social.vue', () => {
   it('should render correct social section', () => {
     const vm = new Vue({
-      template: '<div><social></social></div>',
-      components: { Social },
+      render: h => h(Social),
       store
     }).$mount()
     expect(vm.$el.querySelectorAll('#social .row .col-lg-3').length).to.eql(4)
@@ -14,8 +13,7 @@ describe('Social.vue', () => {
 
   it('should render correct networks section', () => {
     const vm = new Vue({
-      template: '<div><social></social></div>',
-      components: { Social },
+      render: h => h(Social),
       store
     }).$mount()
     expect(vm.$el.querySelector('#social .row .col-lg-12 h2').textContent).to.eql('Stay connected!')
