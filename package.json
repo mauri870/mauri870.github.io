@@ -33,6 +33,7 @@
     "connect-history-api-fallback": "^1.1.0",
     "cross-spawn": "^2.1.5",
     "css-loader": "^0.23.0",
+    "es6-promise": "^3.2.1",
     "eslint": "^2.10.2",
     "eslint-config-standard": "^5.1.0",
     "eslint-friendly-formatter": "^2.0.5",
