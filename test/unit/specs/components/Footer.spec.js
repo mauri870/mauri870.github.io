@@ -5,17 +5,15 @@ import store from 'src/store'
 describe('Footer.vue', () => {
   it('Test footer phrase', () => {
     const vm = new Vue({
-      template: '<div><vc-footer></vc-footer></div>',
-      components: { VcFooter },
+      render: h => h(VcFooter),
       store
     }).$mount()
-    expect(vm.$el.querySelector('.container .row p b').textContent).to.eql((vm.$store.state.info.phrase).toUpperCase())
+    expect(vm.$el.querySelector('.container .row .col-lg-4 p b').textContent).to.eql((vm.$store.state.info.phrase).toUpperCase())
   })
 
   it('Test footer links', () => {
     const vm = new Vue({
-      template: '<div><vc-footer></vc-footer></div>',
-      components: { VcFooter },
+      render: h => h(VcFooter),
       store
     }).$mount()
     expect(vm.$el.querySelector('.container .row p a').href).to.contain('mailto:' + vm.$store.state.info.email)
