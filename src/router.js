@@ -9,8 +9,8 @@ Vue.use(VueRouter)
 var router = new VueRouter({
   base: __dirname,
   routes: [
-      { path: '/', component: Index },
-      { path: '*', component: NotFound }
+      { path: '/', name: 'index', component: Index },
+      { path: '*', name: 'notfound', component: NotFound }
   ]
 })
 
