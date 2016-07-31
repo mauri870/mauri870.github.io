@@ -4,7 +4,7 @@
 
     navbar-site
 
-    main-content
+    router-view
 
     social-section
 
@@ -16,7 +16,6 @@ import FakeLoader from './components/Fakeloader.vue'
 import NavbarSite from './components/Navbar.vue'
 import SocialSection from './components/Social.vue'
 import FooterSite from './components/Footer.vue'
-import MainContent from './pages/index.vue'
 
 export default {
   name: 'Site',
@@ -24,8 +23,7 @@ export default {
     FakeLoader,
     NavbarSite,
     SocialSection,
-    FooterSite,
-    MainContent
+    FooterSite
   }
 }
 </script>
