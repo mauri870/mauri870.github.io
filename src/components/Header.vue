@@ -24,17 +24,24 @@
 
 <script>
 import $ from 'jquery'
+import { mapGetters } from 'vuex'
 import '../../bower_components/typed.js/js/typed'
 
 export default {
   name: 'Header',
   mounted () {
+    let vm = this
     $(function () {
       $('.typed').typed({
-        strings: ['LARAVEL', 'VUEJS', 'LUMEN', 'GIT', 'PHP', 'WEBPACK', 'ELECTRON', 'MYSQL', 'SOLID', 'REST API\'S', 'HTML', 'CSS', 'BOOTSTRAP', 'BOWER', 'COMPOSER', 'NPM', 'LINUX', 'GULP', 'AWS'],
+        strings: vm.$options.filters.shuffleArray(vm.skills),
         typeSpeed: 0,
         loop: true
       })
+    })
+  },
+  computed: {
+    ...mapGetters({
+      skills: 'infoSkills'
     })
   }
 }
