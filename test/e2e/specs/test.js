@@ -11,10 +11,8 @@ module.exports = {
   },
   'mauri870.github.io e2e test 404': browser => {
     browser
-      .url('http://localhost:8080/!#/whatever')
+      .url('http://localhost:8080/#/whatever')
       .assert.containsText('h1', 'Sorry but the page you are looking for could not be found')
-      .click('a')
-      .assert.visible('#headerwrap')
       .end()
   }
 }
