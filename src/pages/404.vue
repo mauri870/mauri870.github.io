@@ -12,6 +12,7 @@
               button.btn.btn-default.btn-lg 
                 i.fa.fa-home
                 |  Take me home
+            img.center-block.img-responsive(src="../assets/img/gophersworking.png")    
     .span#control-navbar     
 </template>
 
@@ -31,6 +32,6 @@
       i {
         color: #FF0000;
       }
-    }
+    }  
   }
 </style>
