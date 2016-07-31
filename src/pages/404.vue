@@ -8,7 +8,7 @@
               i.fa.fa-warning.fa-2x
               br 
               |  Sorry but the page you are looking for could not be found
-            a(v-link="{ path : '/' }")
+            router-link(to="/")
               button.btn.btn-default.btn-lg 
                 i.fa.fa-home
                 |  Take me home
