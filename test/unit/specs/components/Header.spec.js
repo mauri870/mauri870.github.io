@@ -1,9 +1,11 @@
 import Vue from 'vue'
+import store from 'src/store'
 import VcHeader from 'src/components/Header'
 
 describe('Header.vue', () => {
   it('should render correct header section', () => {
     const vm = new Vue({
+      store,
       render: h => h(VcHeader)
     }).$mount()
     expect(vm.$el.querySelector('h3').textContent).to.eql('My skills')
@@ -11,6 +13,7 @@ describe('Header.vue', () => {
 
   it('should render correct curriculum links', () => {
     const vm = new Vue({
+      store,
       render: h => h(VcHeader)
     }).$mount()
     expect(vm.$el.querySelectorAll('.curriculum a')[0].textContent).to.contain('Curriculum EN')
