@@ -14,7 +14,7 @@ module.exports = {
       .url('http://localhost:8080/!#/whatever')
       .assert.containsText('h1', 'Sorry but the page you are looking for could not be found')
       .click('a')
-      .assert.containsText('h3', 'My skills')
+      .assert.visible('#headerwrap')
       .end()
   }
 }
