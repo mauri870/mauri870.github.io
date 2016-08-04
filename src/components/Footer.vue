@@ -22,7 +22,7 @@
           |  of this project on 
           a(href="http://github.com/mauri870/mauri870.github.io" target="_blank")
             i.fa.fa-github.fa-2x
-        p Builded with 
+        p Built with 
           i.fa.fa-heart.heart
           |  on top of Vue 2.0, Vuex, SCSS, Jade and Webpack
       .col-sm-12.text-center
