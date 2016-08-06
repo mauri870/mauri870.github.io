@@ -21,8 +21,10 @@
   .project {
     margin-top: 30px;
     img {
+      transition: all .2s ease-in-out;
       &:hover {
         opacity: 0.4;
+        transform: scale(1.1);
       }
     }
   }
