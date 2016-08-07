@@ -65,7 +65,6 @@ export default {
 
     a#hiring {
       position: relative;
-      top: 45px;
       background: $default-color;
       padding: 7px 15px;
       color: white;
