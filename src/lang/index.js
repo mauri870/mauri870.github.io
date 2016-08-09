@@ -1,11 +1,11 @@
 import Vue from 'vue'
 
-import PtBr from './locales/pt-br'
-import En from './locales/en'
+import pt from './locales/pt-br'
+import en from './locales/en'
 
 export default {
-  'pt-br': PtBr,
-  en: En
+  pt,
+  en
 }
 
 export function changeLocale (lang) {
