@@ -8,6 +8,7 @@ import Site from './Site'
 import store from './store'
 import router from './router'
 import './filters'
+import './i18n'
 
 import {initAnalytics} from './utils/analytics'
 
