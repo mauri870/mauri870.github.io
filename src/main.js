@@ -1,8 +1,3 @@
-// Import default styles
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/js/bootstrap'
-import 'font-awesome/css/font-awesome.css'
-
 import Vue from 'vue'
 import Site from './Site'
 import store from './store'

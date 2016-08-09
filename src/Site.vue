@@ -17,6 +17,11 @@ import NavbarSite from './components/Navbar.vue'
 import SocialSection from './components/Social.vue'
 import FooterSite from './components/Footer.vue'
 
+// Import default styles
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap'
+import 'font-awesome/css/font-awesome.css'
+
 export default {
   name: 'Site',
   components: {
