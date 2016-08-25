@@ -2,10 +2,10 @@ export default {
   state: {
     projects: [
       {
-        name: 'Php Watson SDK',
-        link: 'http://github.com/php-watson/client-sdk',
-        description: 'A PHP SDK for the IBM Watson Services',
-        image: require('../../assets/img/portfolio/php-watson.png')
+        name: 'Powershell Reverse Http',
+        link: 'https://github.com/mauri870/powershell-reverse-http',
+        description: 'A Powershell exploit, windows native service with no virus signature that open a reverse http connection via meterpreter',
+        image: require('../../assets/img/portfolio/exploit.png')
       },
       {
         name: 'Cloudradioo App',
