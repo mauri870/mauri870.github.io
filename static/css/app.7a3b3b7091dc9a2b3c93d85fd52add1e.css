@@ -9470,22 +9470,22 @@ body .mb {
     right: 0;
 }
 
-#footerwrap[data-v-6] {
+#footerwrap[data-v-7] {
   padding-top: 70px;
   padding-bottom: 50px;
   background-color: #2f2f2f;
 }
-#footerwrap h2[data-v-6] {
+#footerwrap h2[data-v-7] {
     color: white;
 }
-#footerwrap h2 sup[data-v-6] {
+#footerwrap h2 sup[data-v-7] {
       color: #1abc9c;
 }
-#footerwrap p[data-v-6] {
+#footerwrap p[data-v-7] {
     color: #f2f2f2;
     margin-left: 10px;
 }
-#footerwrap p .heart[data-v-6] {
+#footerwrap p .heart[data-v-7] {
       color: red;
 }
 
@@ -9565,12 +9565,12 @@ body .mb {
 }
 }
 
-.heart[data-v-9] {
+.heart[data-v-8] {
   color: red;
 }
 
 /* Icon pulse */
-.fa-pulse[data-v-9] {
+.fa-pulse[data-v-8] {
   -webkit-animation: pulse 2s linear infinite;
   animation: pulse 2s linear infinite;
 }
@@ -9643,4 +9643,4 @@ body .mb {
       color: #FF0000;
 }
 
-/*# sourceMappingURL=app.3c134734f5e90306d1f167d62e82e3a6.css.map*/
+/*# sourceMappingURL=app.7a3b3b7091dc9a2b3c93d85fd52add1e.css.map*/
