@@ -24,7 +24,7 @@
             i.fa.fa-github.fa-2x
         p Built with 
           i.fa.fa-heart.heart
-          |  on top of Vue 2.0, Vuex, SCSS, Jade and Webpack
+          |  on top of Vue 2.0, Vuex, SCSS, Jade and Webpack 2.0
       .col-sm-12.text-center
         img(src="https://api.travis-ci.org/mauri870/mauri870.github.io.svg?branch=develop")
 </template>
