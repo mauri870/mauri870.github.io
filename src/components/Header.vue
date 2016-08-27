@@ -55,15 +55,6 @@ export default {
     background: url(../assets/img/work.jpg) no-repeat center top;
     background-attachment: relative;
     background-position: center center;
-
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
 
     .curriculum {
