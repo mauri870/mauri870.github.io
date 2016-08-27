@@ -1,8 +1,0 @@
-.DS_Store
-node_modules/
-.idea/
-npm-debug.log
-selenium-debug.log
-test/unit/coverage
-test/e2e/reports
-bower_components
