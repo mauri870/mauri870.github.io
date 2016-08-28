@@ -23,35 +23,35 @@ export default {
         image: require('../../assets/img/portfolio/cloudradioo-app.png')
       },
       {
-        name: 'mauri870/api-skeleton-laravel',
+        name: 'Laravel Skeleton Api',
         link: 'https://github.com/mauri870/api-skeleton-laravel',
         description: 'An API Skeleton for Laravel 5.1 with JWT',
         techs: ['Laravel', 'JWT', 'REST'],
         image: require('../../assets/img/portfolio/laravel-package.png')
       },
       {
-        name: 'artesaos/laravel-docs',
+        name: 'Laravel Docs',
         link: 'https://github.com/artesaos/laravel-docs',
         description: 'Translation of Laravel 5 docs to PT-BR',
         techs: ['Laravel', 'Documentation'],
         image: require('../../assets/img/portfolio/artesaos-package.png')
       },
       {
-        name: 'artesaos/laravel-installer',
+        name: 'Laravel Installer',
         link: 'https://github.com/artesaos/laravel-installer',
         description: 'Install laravel framework with any version you want',
         techs: ['Laravel'],
         image: require('../../assets/img/portfolio/artesaos-package.png')
       },
       {
-        name: 'artesaos/defender',
+        name: 'Defender',
         link: 'https://github.com/artesaos/defender',
         description: 'Roles & Permissions for Laravel 5',
         techs: ['Laravel', 'Package'],
         image: require('../../assets/img/portfolio/artesaos-package.png')
       },
       {
-        name: 'artesaos/laravel-linkedin',
+        name: 'Laravel Linkedin Client',
         link: 'https://github.com/artesaos/laravel-linkedin',
         description: 'Linkedin API integration for Laravel and Lumen 5',
         techs: ['Laravel', 'Package'],
