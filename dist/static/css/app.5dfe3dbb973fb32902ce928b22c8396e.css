@@ -9565,12 +9565,12 @@ body .mb {
 }
 }
 
-.heart[data-v-8] {
+.heart[data-v-9] {
   color: red;
 }
 
 /* Icon pulse */
-.fa-pulse[data-v-8] {
+.fa-pulse[data-v-9] {
   -webkit-animation: pulse 2s linear infinite;
   animation: pulse 2s linear infinite;
 }
@@ -9643,4 +9643,4 @@ body .mb {
       color: #FF0000;
 }
 
-/*# sourceMappingURL=app.7a3b3b7091dc9a2b3c93d85fd52add1e.css.map*/
+/*# sourceMappingURL=app.5dfe3dbb973fb32902ce928b22c8396e.css.map*/
