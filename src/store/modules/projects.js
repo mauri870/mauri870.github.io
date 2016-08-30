@@ -2,18 +2,25 @@ export default {
   state: {
     projects: [
       {
-        name: 'Powershell Reverse Http',
-        link: 'https://github.com/mauri870/powershell-reverse-http',
-        description: 'A Powershell exploit, windows native service with no virus signature that open a reverse http connection via meterpreter',
-        techs: ['Go', 'Exploit', 'Metasploit Framework'],
-        image: require('../../assets/img/portfolio/exploit.png')
+        name: 'Ransomware',
+        link: 'https://github.com/mauri870/ransomware',
+        description: 'A Ransomware clone, written in pure go (Academic)',
+        techs: ['Go', 'Malware', 'Security', 'Cryptography'],
+        image: require('../../assets/img/portfolio/security-padlock.png')
       },
       {
         name: 'Cryptofile',
         link: 'https://github.com/mauri870/cryptofile',
         description: 'Encrypt or decrypt files using AES-256 or AES-128',
-        techs: ['Go', 'Security'],
+        techs: ['Go', 'Security', 'Cryptography'],
         image: require('../../assets/img/portfolio/security-padlock.png')
+      },
+      {
+        name: 'Powershell Reverse Http',
+        link: 'https://github.com/mauri870/powershell-reverse-http',
+        description: 'A Powershell exploit, windows native service with no virus signature that open a reverse http connection via meterpreter',
+        techs: ['Go', 'Exploit', 'Metasploit Framework'],
+        image: require('../../assets/img/portfolio/exploit.png')
       },
       {
         name: 'Cloudradioo App',
