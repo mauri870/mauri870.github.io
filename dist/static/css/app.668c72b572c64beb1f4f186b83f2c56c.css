@@ -9386,18 +9386,18 @@ body .mb {
   z-index: 999999 !important;
 }
 
-.navbar-default[data-v-6] {
+.navbar-default[data-v-5] {
   background-color: transparent;
   border-color: transparent;
 }
-.navbar-default .navbar-brand[data-v-6] {
+.navbar-default .navbar-brand[data-v-5] {
     color: #1abc9c;
     font-weight: 700;
 }
-.navbar-default .logo[data-v-6] {
+.navbar-default .logo[data-v-5] {
     font-size: xx-large;
 }
-.navbar-default a#hiring[data-v-6] {
+.navbar-default a#hiring[data-v-5] {
     position: relative;
     background: #1abc9c;
     padding: 7px 15px;
@@ -9421,7 +9421,7 @@ body .mb {
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-.navbar-default a#hiring[data-v-6]:after {
+.navbar-default a#hiring[data-v-5]:after {
       position: absolute;
       content: "";
       left: -5px;
@@ -9437,14 +9437,14 @@ body .mb {
       -o-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
 }
-.navbar-default .navbar-nav a[data-v-6] {
+.navbar-default .navbar-nav a[data-v-5] {
     color: #1abc9c;
     background-color: transparent;
 }
-.navbar-default .navbar-nav a[data-v-6]:hover {
+.navbar-default .navbar-nav a[data-v-5]:hover {
       color: #1abc9c;
 }
-.nav-second-color[data-v-6] {
+.nav-second-color[data-v-5] {
   background-color: #fff;
   color: #444;
 }
@@ -9470,22 +9470,22 @@ body .mb {
     right: 0;
 }
 
-#footerwrap[data-v-8] {
+#footerwrap[data-v-7] {
   padding-top: 70px;
   padding-bottom: 50px;
   background-color: #2f2f2f;
 }
-#footerwrap h2[data-v-8] {
+#footerwrap h2[data-v-7] {
     color: white;
 }
-#footerwrap h2 sup[data-v-8] {
+#footerwrap h2 sup[data-v-7] {
       color: #1abc9c;
 }
-#footerwrap p[data-v-8] {
+#footerwrap p[data-v-7] {
     color: #f2f2f2;
     margin-left: 10px;
 }
-#footerwrap p .heart[data-v-8] {
+#footerwrap p .heart[data-v-7] {
       color: red;
 }
 
@@ -9643,4 +9643,4 @@ body .mb {
       color: #FF0000;
 }
 
-/*# sourceMappingURL=app.9fc52bb18089cc5452e1061f3c4d3782.css.map*/
+/*# sourceMappingURL=app.668c72b572c64beb1f4f186b83f2c56c.css.map*/
