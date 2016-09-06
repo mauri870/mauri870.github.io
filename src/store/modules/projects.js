@@ -4,7 +4,7 @@ export default {
       {
         name: 'Ransomware',
         link: 'https://github.com/mauri870/ransomware',
-        description: 'A Ransomware clone, written in pure go (Academic)',
+        description: 'A crypto-ransomware written in pure go (Academic)',
         techs: ['Go', 'Malware', 'Security', 'Cryptography'],
         image: require('../../assets/img/portfolio/security-padlock.png')
       },
