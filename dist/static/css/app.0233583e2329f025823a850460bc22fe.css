@@ -9470,22 +9470,22 @@ body .mb {
     right: 0;
 }
 
-#footerwrap[data-v-7] {
+#footerwrap[data-v-6] {
   padding-top: 70px;
   padding-bottom: 50px;
   background-color: #2f2f2f;
 }
-#footerwrap h2[data-v-7] {
+#footerwrap h2[data-v-6] {
     color: white;
 }
-#footerwrap h2 sup[data-v-7] {
+#footerwrap h2 sup[data-v-6] {
       color: #1abc9c;
 }
-#footerwrap p[data-v-7] {
+#footerwrap p[data-v-6] {
     color: #f2f2f2;
     margin-left: 10px;
 }
-#footerwrap p .heart[data-v-7] {
+#footerwrap p .heart[data-v-6] {
       color: red;
 }
 
@@ -9643,4 +9643,4 @@ body .mb {
       color: #FF0000;
 }
 
-/*# sourceMappingURL=app.668c72b572c64beb1f4f186b83f2c56c.css.map*/
+/*# sourceMappingURL=app.0233583e2329f025823a850460bc22fe.css.map*/
