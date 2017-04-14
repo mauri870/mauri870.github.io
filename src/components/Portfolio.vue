@@ -7,7 +7,7 @@
           | open source
         p Some projects that I have worked on:
 
-        project(v-for="project in projects", :item="project") 
+        project(v-for="project in projects", :item="project", :key="project.id") 
 </template>
 
 <script>

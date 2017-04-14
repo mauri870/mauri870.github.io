@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import Portfolio from 'src/components/Portfolio'
-import store from 'src/store'
+import Portfolio from '@/components/Portfolio'
+import store from '@/store'
 
 describe('Portfolio.vue', () => {
   it('should render correct portfolio section', () => {

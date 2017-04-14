@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import Social from 'src/components/Social'
-import store from 'src/store'
+import Social from '@/components/Social'
+import store from '@/store'
 
 describe('Social.vue', () => {
   it('should render correct social section', () => {

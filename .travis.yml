@@ -4,6 +4,5 @@ node_js:
   - "5"
   - "4"
 
-# Upgrade to npm 3 for prevent problems
 before_install: npm i npm@3.0 -g
 script: npm run unit

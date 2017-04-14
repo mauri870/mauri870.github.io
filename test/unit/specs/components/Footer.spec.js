@@ -1,6 +1,6 @@
 import Vue from 'vue'
-import VcFooter from 'src/components/Footer'
-import store from 'src/store'
+import VcFooter from '@/components/Footer'
+import store from '@/store'
 
 describe('Footer.vue', () => {
   it('Test footer phrase', () => {

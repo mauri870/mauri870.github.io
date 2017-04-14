@@ -1,7 +1,5 @@
-// I will look into this test later
-
-/*  import Vue from 'vue'
-import Project from 'src/components/partials/project'
+import Vue from 'vue'
+import Project from '@/components/partials/project'
 
 describe('project.vue', () => {
   it('should render correct single project', () => {
@@ -21,4 +19,4 @@ describe('project.vue', () => {
     expect(vm.$el.querySelector('.project a').href).to.contain('https://test.dev')
     expect(vm.$el.querySelector('.project p.description').textContent).to.contain('A simple test')
   })
-})*/
+})
