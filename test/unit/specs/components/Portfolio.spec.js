@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Portfolio from '@/components/Portfolio'
+import Portfolio from '@/components/portfolio'
 import store from '@/store'
 
 describe('Portfolio.vue', () => {

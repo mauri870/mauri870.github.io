@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import Social from '@/components/Social'
+import Social from '@/components/social'
 import store from '@/store'
 
 describe('Social.vue', () => {

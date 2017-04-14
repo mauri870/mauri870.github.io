@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import store from '@/store'
-import VcHeader from '@/components/Header'
+import VcHeader from '@/components/header'
 
 describe('Header.vue', () => {
   it('should render correct header section', () => {

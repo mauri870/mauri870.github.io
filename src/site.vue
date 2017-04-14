@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import FakeLoader from './components/Fakeloader.vue'
-import NavbarSite from './components/Navbar.vue'
-import SocialSection from './components/Social.vue'
-import FooterSite from './components/Footer.vue'
+import FakeLoader from '@/components/fakeloader.vue'
+import NavbarSite from '@/components/navbar.vue'
+import SocialSection from '@/components/social.vue'
+import FooterSite from '@/components/footer.vue'
 
 export default {
   name: 'Site',

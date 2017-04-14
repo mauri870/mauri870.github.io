@@ -4,9 +4,9 @@ import 'bootstrap/dist/js/bootstrap'
 import 'font-awesome/css/font-awesome.css'
 
 import Vue from 'vue'
-import Site from './Site'
-import store from './store'
-import router from './router'
+import Site from '@/site'
+import store from '@/store'
+import router from '@/router'
 import './filters'
 
 Vue.config.productionTip = false

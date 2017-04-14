@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Project from './partials/project'
+import Project from '@/components/partials/project'
 import { mapGetters } from 'vuex'
 
 export default {

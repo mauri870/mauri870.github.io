@@ -1,5 +1,5 @@
 import Vue from 'vue'
-import VcFooter from '@/components/Footer'
+import VcFooter from '@/components/footer'
 import store from '@/store'
 
 describe('Footer.vue', () => {

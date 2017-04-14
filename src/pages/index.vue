@@ -6,8 +6,8 @@
 </template>
 
 <script>
-    import HeaderWrap from '../components/Header.vue'
-    import MyPortfolio from '../components/Portfolio.vue'
+    import HeaderWrap from '@/components/header.vue'
+    import MyPortfolio from '@/components/portfolio.vue'
     
     export default {
       name: 'Index',
