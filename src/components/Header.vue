@@ -16,9 +16,6 @@
               a.btn.btn-site-color(href="https://github.com/mauri870/certificados" target="_blank")
                   i.fa.fa-file-text
                   |  Certificates
-              a.btn.btn-site-color(href="static/docs/curricula/curriculum-pt.pdf" target="_blank")
-                  i.fa.fa-file-text
-                  |  Curriculum PT-BR
     .span#control-navbar
 </template>
 
