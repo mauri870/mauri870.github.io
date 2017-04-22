@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
   section#works
     .container
       .row.centered.mt.mb

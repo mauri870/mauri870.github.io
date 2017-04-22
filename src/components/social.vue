@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
   #social
     .container
       .row.centered

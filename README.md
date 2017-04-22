@@ -8,7 +8,7 @@ My personal website built with:
  - Vuex 2.0
  - Vue Router 2.0
  - SCSS
- - Jade
+ - Pug
 
 ## Build Setup
 

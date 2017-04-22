@@ -27,7 +27,7 @@ module.exports = merge(baseWebpackConfig, {
     // https://github.com/ampedandwired/html-webpack-plugin
     new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: '!!jade-loader!index.jade',
+      template: '!!pug-loader!index.pug',
       inject: true
     }),
     new FriendlyErrorsPlugin()

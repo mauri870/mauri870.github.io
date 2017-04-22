@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
   <!-- Static navbar -->
   .navbar.navbar-default.navbar-fixed-top#navbar-menu(role="navigation")
     .container

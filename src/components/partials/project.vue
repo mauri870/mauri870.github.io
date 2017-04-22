@@ -1,4 +1,4 @@
-<template lang="jade">
+<template lang="pug">
   .col-sm-4.project
     h3 {{ item.name }}
     a(:href="item.link" target="_blank")
