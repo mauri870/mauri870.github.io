@@ -13,7 +13,7 @@
               a.btn.btn-site-color(href="static/docs/curricula/curriculum-en.pdf" target="_blank")
                   i.fa.fa-file-text
                   |  Curriculum EN
-              a.btn.btn-site-color(href="https://github.com/mauri870/certificados" target="_blank")
+              a.btn.btn-site-color(href="https://github.com/mauri870/certificates" target="_blank")
                   i.fa.fa-file-text
                   |  Certificates
     .span#control-navbar
