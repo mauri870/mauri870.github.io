@@ -9,6 +9,13 @@ export default {
         image: require('../../assets/img/portfolio/security-padlock.png')
       },
       {
+        name: 'Kaggle Cats vs Dogs Redux',
+        link: 'https://github.com/mauri870/kaggle-cats-vs-dogs-redux',
+        description: 'Solution for the 51st place on the Kaggle Cats vs Dogs Redux competition',
+        techs: ['Go', 'Deep Learning', 'Kaggle', 'Tensorflow'],
+        image: require('../../assets/img/portfolio/machine-learning.png')
+      },
+      {
         name: 'Cryptofile',
         link: 'https://github.com/mauri870/cryptofile',
         description: 'Encrypt or decrypt files using AES-256 or AES-128',
@@ -71,3 +78,4 @@ export default {
     projects: state => state.projects
   }
 }
+
