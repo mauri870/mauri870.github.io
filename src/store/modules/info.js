@@ -1,9 +1,9 @@
 export default {
   state: {
-    phrase: 'Web Designer, Developer, Gamer, History, science and astronomy lover',
+    phrase: 'Software Engineer, Developer, Gamer, History, Science and astronomy lover',
     email: 'mauri870@gmail.com',
     phone: '+55 54 8118-9792',
-    skills: ['LARAVEL', 'VUEJS', 'LUMEN', 'GO', 'REDIS', 'GIT', 'PHP', 'ʕ◔ϖ◔ʔ', 'WEBPACK', 'ELECTRON', 'MYSQL', 'SOLID', 'REST API\'S', 'HTML', 'CSS', 'BOOTSTRAP', 'BOWER', 'COMPOSER', 'NPM', 'LINUX', 'GULP', 'AWS', 'DOCKER', 'KERAS', 'TENSORFLOW', 'ZEPHIR', 'GRPC', 'PROTOBUF']
+    skills: ['LARAVEL', 'VUEJS', 'LUMEN', 'GO', 'REDIS', 'GIT', 'PHP', 'ʕ◔ϖ◔ʔ', 'WEBPACK', 'ELECTRON', 'MYSQL', 'SOLID', 'REST API\'S', 'HTML', 'CSS', 'BOOTSTRAP', 'BOWER', 'COMPOSER', 'NPM', 'LINUX', 'GULP', 'AWS', 'DOCKER', 'KERAS', 'TENSORFLOW', 'ZEPHIR', 'GRPC', 'PROTOBUF', 'BAZEL', 'GCLOUD']
   },
   mutations: {},
   getters: {
