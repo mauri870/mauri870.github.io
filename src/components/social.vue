@@ -14,24 +14,9 @@
 
 <script>
   import { mapGetters } from 'vuex'
-  import $ from 'jquery'
 
   export default {
     name: 'Social',
-    mounted () {
-      $(document).ready(function () {
-        $('img.gopher').hover(
-          function () {
-            $(this).animate({'width': '200px'}, 'fast')
-            $('#social').animate({'padding-bottom': '100px'}, 'fast')
-          },
-          function () {
-            $(this).animate({'width': '150px'}, 'fast')
-            $('#social').animate({'padding-bottom': '50px'}, 'fast')
-          }
-        )
-      })
-    },
     computed: {
       ...mapGetters({
         networks: 'networks'
@@ -45,8 +30,8 @@
     padding: 50px 50px;
     background-color: #f2f2f2;
     overflow: hidden;
-    padding-bottom: 50px;
-    
+    padding-bottom: 40px;
+
     i {
       font-size: 40px;
       color: #4a4a4a;
@@ -61,6 +46,10 @@
       position: absolute;
       left:0;
       right:0;
+
+      &:hover {
+        top: -3rem;
+      }
     }
   }
 </style>
