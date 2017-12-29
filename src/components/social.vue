@@ -5,7 +5,7 @@
         .col-lg-12
           h2 Stay connected!
           br
-        .col-lg-3.networks(v-for="network in networks")
+        .col-lg-4.networks(v-for="network in networks")
           a(:href="network.link" target="_blank")
             i(:class="network.icon")
         .col-lg-12
