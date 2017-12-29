@@ -18,14 +18,15 @@
   .description {
     min-height: 100px;
     font-weight: 500;
-  } 
+  }
 
   .project {
     margin-top: 30px;
     img {
+      opacity: 0.4;
       transition: all .2s ease-in-out;
       &:hover {
-        opacity: 0.4;
+        opacity: 0.8;
         transform: scale(1.1);
       }
     }

@@ -8,7 +8,7 @@ describe('Social.vue', () => {
       render: h => h(Social),
       store
     }).$mount()
-    expect(vm.$el.querySelectorAll('#social .row .col-lg-3').length).to.eql(4)
+    expect(vm.$el.querySelectorAll('#social .row .col-lg-4').length).to.eql(3)
   })
 
   it('should render correct networks section', () => {
@@ -17,9 +17,9 @@ describe('Social.vue', () => {
       store
     }).$mount()
     expect(vm.$el.querySelector('#social .row .col-lg-12 h2').textContent).to.eql('Stay connected!')
-    expect(vm.$el.querySelectorAll('#social .row .col-lg-3 a')[0].href).to.contain('facebook')
-    expect(vm.$el.querySelectorAll('#social .row .col-lg-3 a')[1].href).to.contain('github')
-    expect(vm.$el.querySelectorAll('#social .row .col-lg-3 a')[2].href).to.contain('linkedin')
-    expect(vm.$el.querySelectorAll('#social .row .col-lg-3 a')[3].href).to.contain('steam')
+    const networks = vm.$el.querySelectorAll('#social .row .col-lg-4 a')
+    expect(networks[0].href).to.contain('github')
+    expect(networks[1].href).to.contain('linkedin')
+    expect(networks[2].href).to.contain('steam')
   })
 })
