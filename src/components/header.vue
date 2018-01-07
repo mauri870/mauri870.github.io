@@ -67,8 +67,11 @@ export default {
       }
     }
 
-    
-    .typed-cursor{
+    .typed {
+      word-wrap: break-word;
+    }
+
+    .typed-cursor {
       opacity: 1;
       -webkit-animation: blink 0.7s infinite;
       -moz-animation: blink 0.7s infinite;
