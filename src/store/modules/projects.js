@@ -9,6 +9,20 @@ export default {
         image: require('../../assets/img/portfolio/security-padlock.png')
       },
       {
+        name: 'Baking Pi',
+        link: 'https://github.com/mauri870/baking-pi',
+        description: 'Operating Systems development',
+        techs: ['Assembly', 'ARM', 'OS'],
+        image: require('../../assets/img/portfolio/assembly.png')
+      },
+      {
+        name: 'Assembly Fun',
+        link: 'https://github.com/mauri870/problems-assembly',
+        description: 'Some fun in assembly linux x64',
+        techs: ['Assembly', 'x64', 'Syscalls', 'Linux'],
+        image: require('../../assets/img/portfolio/assembly.png')
+      },
+      {
         name: 'Kaggle Cats vs Dogs Redux',
         link: 'https://github.com/mauri870/kaggle-cats-vs-dogs-redux',
         description: 'Solution for the 51st place on the Kaggle Cats vs Dogs Redux competition',
