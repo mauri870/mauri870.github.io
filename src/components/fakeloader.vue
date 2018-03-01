@@ -4,7 +4,7 @@
 
 <script>
 import $ from 'jquery'
-import '../../bower_components/fakeLoader/fakeLoader.min'
+import '../assets/js/fakeLoader'
 
 export default {
   name: 'Fakeloader',
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style>
-  @import '../../bower_components/fakeLoader/fakeLoader.css';
+  @import '../assets/css/fakeLoader.css';
 
   #fakeLoader {
     z-index: 999999 !important;
