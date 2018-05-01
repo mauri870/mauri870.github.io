@@ -12,7 +12,7 @@ hasCJKLanguage = false
 [params]
 	author = "Mauri de Souza Nunes"
 	description = "My personal dev blog"
-	bio = "Hi, it's me, Mauri!"
+	bio = "Software engineering, AI, web and devops stuff"
 
 	enableRSS = true
 	enableToc = true
