@@ -3,7 +3,7 @@
     #headerwrap
       .container
         .row
-          .col-lg-6.col-lg-offset-3
+          .col-lg-12
             h3 My skills
             h1
               span.typed
