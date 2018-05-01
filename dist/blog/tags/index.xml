@@ -6,37 +6,9 @@
     <description>Recent content in Tags on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Sep 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://mauri870.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Blog</title>
-      <link>http://mauri870.github.io/blog/tags/blog/</link>
-      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://mauri870.github.io/blog/tags/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Example</title>
-      <link>http://mauri870.github.io/blog/tags/example/</link>
-      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://mauri870.github.io/blog/tags/example/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>http://mauri870.github.io/blog/tags/hugo/</link>
-      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
-      
-      <guid>http://mauri870.github.io/blog/tags/hugo/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
