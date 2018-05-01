@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mauri870&#39;s dev blog</title>
-    <link>http://mauri870.github.io/blog/</link>
+    <link>https://mauri870.github.io/blog/</link>
     <description>Recent content on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://mauri870.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mauri870.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
