@@ -13,6 +13,9 @@
       .navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
           li
+            a(href="blog/" target="_self")
+              i.fa.fa-rss.fa-2x
+          li
             a(href="http://github.com/mauri870" target="_blank")
               i.fa.fa-github.fa-2x
           li
@@ -57,7 +60,7 @@ export default {
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
-    
+
     .navbar-brand {
       color: $default-color;
       font-weight: 700;
@@ -108,7 +111,7 @@ export default {
         transition: all 0.2s ease-in-out;
       }
     }
-    
+
     .navbar-nav {
       a {
         color: $default-color;

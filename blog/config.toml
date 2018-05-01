@@ -1,0 +1,29 @@
+baseURL = "http://mauri870.github.io/blog/"
+languageCode = "en-us"
+publishDir = "../dist/blog"
+title = "Mauri870's dev blog"
+theme = "cactus"
+
+# Theme settings
+enableGoogleAnalytics = true
+googleAnalytics = "UA-79904458-1"
+hasCJKLanguage = false
+
+[params]
+	author = "Mauri de Souza Nunes"
+	description = "My personal dev blog"
+	bio = "Hi, it's me, Mauri!"
+
+	enableRSS = true
+	enableToc = true
+
+	enableSummary = true
+
+	# 404 page
+	title404 = "Ooops!"
+	subtitle404 = "The page you are looking for could not be found :("
+
+	iconFont = "font-awesome"
+
+[social]
+	github-square = "https://www.github.com/mauri870"
