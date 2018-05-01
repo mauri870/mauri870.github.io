@@ -1,4 +1,4 @@
-baseURL = "http://mauri870.github.io/blog/"
+baseURL = "https://mauri870.github.io/blog/"
 languageCode = "en-us"
 publishDir = "../dist/blog"
 title = "Mauri870's dev blog"
