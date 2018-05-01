@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Mauri870&#39;s dev blog</title>
+    <link>http://mauri870.github.io/blog/categories/</link>
+    <description>Recent content in Categories on Mauri870&#39;s dev blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://mauri870.github.io/blog/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Example</title>
+      <link>http://mauri870.github.io/blog/categories/example/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://mauri870.github.io/blog/categories/example/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hello</title>
+      <link>http://mauri870.github.io/blog/categories/hello/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://mauri870.github.io/blog/categories/hello/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
