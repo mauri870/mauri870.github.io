@@ -3,6 +3,7 @@ languageCode = "en-us"
 publishDir = "../dist/blog"
 title = "Mauri870's dev blog"
 theme = "cactus"
+enableEmoji=true
 
 # Theme settings
 enableGoogleAnalytics = true
