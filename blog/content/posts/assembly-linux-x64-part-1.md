@@ -155,7 +155,7 @@ Here is a runnable example, a hello world using system calls:
   global _start
   _start:
     mov rax, 1
-    xor rdi, rdi
+    mov rdi, 1
     mov rsi, message
     mov rdx, 13
     syscall
@@ -172,7 +172,7 @@ For each line of code:
 
 **4** - The instruction `mov` transfers the value of the right most operand to the left. In this case it stores 1 into the register `rax`. Linux has an [standardized method](http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/) to call system routines from assembly. Following this table we should store the system call number in the register `rax`, for `sys_write` it's 1.
 
-**5** - The instruction `xor` apply an exclusive or between the two operands, it's the fastest way to zero out a register. The register `rdi` for this syscall must contains a valid file descriptor, 0 is stdout. If you not trust me, try `echo "Hello World" > /proc/self/fd/0` 😉
+**5** - The register `rdi` for this syscall must contain a valid file descriptor, 1 is stdout. If you not trust me, try `echo "Hello World" > /proc/self/fd/1` 😉
 
 **6** - Again, a `mov` instruction. The difference here is that it's storing the message in the register `rsi`. The message is just a label, an alias for the memory address defined in the data section. For `sys_write` the `rsi` must contain a `const char *buf`, a constant pointer (memory address) to a char. If we try to get the value that the message address is pointing to we will get the char `H`, because it points to the first item at that memory address.
 
@@ -182,7 +182,7 @@ For each line of code:
 
 **10** - Here goes another system call. All programs running on `Unix` based systems have to exit with `0` to indicate success, here 60 means `sys_exit`.
 
-**11** - In `rdi` goes the exit status, 0.
+**11** - The instruction `xor` apply an exclusive or between the two operands, it's the fastest way to zero out a register. In `rdi` goes the exit status, 0.
 
 **12** Execute the `sys_exit`.
 
