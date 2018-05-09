@@ -245,7 +245,7 @@ objdump -Mintel -d program
   <span style="color:#66d9ef">global</span> _start
   _start:
     <span style="color:#a6e22e">mov</span> rax, <span style="color:#ae81ff">1</span>
-    <span style="color:#a6e22e">xor</span> rdi, rdi
+    <span style="color:#a6e22e">mov</span> rdi, <span style="color:#ae81ff">1</span>
     <span style="color:#a6e22e">mov</span> rsi, message
     <span style="color:#a6e22e">mov</span> rdx, <span style="color:#ae81ff">13</span>
     <span style="color:#a6e22e">syscall</span>
@@ -262,7 +262,7 @@ objdump -Mintel -d program
 
 <p><strong>4</strong> - The instruction <code>mov</code> transfers the value of the right most operand to the left. In this case it stores 1 into the register <code>rax</code>. Linux has an <a href="http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/">standardized method</a> to call system routines from assembly. Following this table we should store the system call number in the register <code>rax</code>, for <code>sys_write</code> it&rsquo;s 1.</p>
 
-<p><strong>5</strong> - The instruction <code>xor</code> apply an exclusive or between the two operands, it&rsquo;s the fastest way to zero out a register. The register <code>rdi</code> for this syscall must contains a valid file descriptor, 0 is stdout. If you not trust me, try <code>echo &quot;Hello World&quot; &gt; /proc/self/fd/0</code> 😉</p>
+<p><strong>5</strong> - The register <code>rdi</code> for this syscall must contain a valid file descriptor, 1 is stdout. If you not trust me, try <code>echo &quot;Hello World&quot; &gt; /proc/self/fd/1</code> 😉</p>
 
 <p><strong>6</strong> - Again, a <code>mov</code> instruction. The difference here is that it&rsquo;s storing the message in the register <code>rsi</code>. The message is just a label, an alias for the memory address defined in the data section. For <code>sys_write</code> the <code>rsi</code> must contain a <code>const char *buf</code>, a constant pointer (memory address) to a char. If we try to get the value that the message address is pointing to we will get the char <code>H</code>, because it points to the first item at that memory address.</p>
 
@@ -272,7 +272,7 @@ objdump -Mintel -d program
 
 <p><strong>10</strong> - Here goes another system call. All programs running on <code>Unix</code> based systems have to exit with <code>0</code> to indicate success, here 60 means <code>sys_exit</code>.</p>
 
-<p><strong>11</strong> - In <code>rdi</code> goes the exit status, 0.</p>
+<p><strong>11</strong> - The instruction <code>xor</code> apply an exclusive or between the two operands, it&rsquo;s the fastest way to zero out a register. In <code>rdi</code> goes the exit status, 0.</p>
 
 <p><strong>12</strong> Execute the <code>sys_exit</code>.</p>
 
