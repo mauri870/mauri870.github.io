@@ -3,8 +3,19 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mauri870.github.io/blog/posts/assembly-linux-x64-part-1/</loc>
+    <lastmod>2018-05-08T21:22:56-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mauri870.github.io/blog/about/</loc>
     <lastmod>2018-05-01T17:40:12+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mauri870.github.io/blog/tags/assembly/</loc>
+    <lastmod>2018-05-08T21:22:56-03:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -13,12 +24,38 @@
   </url>
   
   <url>
+    <loc>https://mauri870.github.io/blog/tags/linux/</loc>
+    <lastmod>2018-05-08T21:22:56-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mauri870.github.io/blog/</loc>
+    <lastmod>2018-05-08T21:22:56-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mauri870.github.io/blog/posts/</loc>
+    <lastmod>2018-05-08T21:22:56-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mauri870.github.io/blog/tags/</loc>
+    <lastmod>2018-05-08T21:22:56-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mauri870.github.io/blog/tags/x64/</loc>
+    <lastmod>2018-05-08T21:22:56-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mauri870.github.io/blog/tags/yasm/</loc>
+    <lastmod>2018-05-08T21:22:56-03:00</lastmod>
     <priority>0</priority>
   </url>
   
