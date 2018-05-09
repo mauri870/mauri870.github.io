@@ -6,9 +6,46 @@
     <description>Recent content in Tags on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 08 May 2018 21:22:56 -0300</lastBuildDate>
     
 	<atom:link href="https://mauri870.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Assembly</title>
+      <link>https://mauri870.github.io/blog/tags/assembly/</link>
+      <pubDate>Tue, 08 May 2018 21:22:56 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/assembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://mauri870.github.io/blog/tags/linux/</link>
+      <pubDate>Tue, 08 May 2018 21:22:56 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X64</title>
+      <link>https://mauri870.github.io/blog/tags/x64/</link>
+      <pubDate>Tue, 08 May 2018 21:22:56 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/x64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yasm</title>
+      <link>https://mauri870.github.io/blog/tags/yasm/</link>
+      <pubDate>Tue, 08 May 2018 21:22:56 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/yasm/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
