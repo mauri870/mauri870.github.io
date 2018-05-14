@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    <meta name="author" content="Mauri de Souza Nunes">
+    <meta name="description" content="Microservices become the new standard for scalable and maintanable arquitectures. Monolithic aplications are splited into smaller pieces to keep things simple and decoupled. Tracing comes in hand when you need to aggregate the events during the request lifecycle between a single or multiple services.
+
+">
+		<meta name="generator" content="Hugo 0.40.2" />
+		<title>Using Opentracing/Jaeger with Laravel &middot; Mauri870&#39;s dev blog</title>
+		<link rel="shortcut icon" href="https://mauri870.github.io/blog/images/favicon.ico">
+		<link rel="stylesheet" href="https://mauri870.github.io/blog/css/style.css">
+		<link rel="stylesheet" href="https://mauri870.github.io/blog/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://mauri870.github.io/blog/css/font-awesome.min.css">
+		
+
+		
+		<link href="https://mauri870.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="Mauri870&#39;s dev blog" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+  <a href='/'>Home</a>
+	
+	
+		<a href='https://mauri870.github.io/blog/'> <span class="arrow">←</span>Blog</a>
+	
+	<a href='https://mauri870.github.io/blog/posts'>Archive</a>
+	<a href='https://mauri870.github.io/blog/tags'>Tags</a>
+	<a href='https://mauri870.github.io/blog/about'>About</a>
+
+	
+
+	
+	<a class="cta" href="https://mauri870.github.io/blog/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Using Opentracing/Jaeger with Laravel
+                    </h1>
+                    <h2 class="headline">
+                    May 13, 2018 22:26
+                    · 717 words
+                    · 4 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a style="padding-left: 1em;" href="https://mauri870.github.io/blog/tags/laravel">Laravel</a>
+                          
+                              <a style="padding-left: 1em;" href="https://mauri870.github.io/blog/tags/opentracing">Opentracing</a>
+                          
+                              <a style="padding-left: 1em;" href="https://mauri870.github.io/blog/tags/jaeger">Jaeger</a>
+                          
+                              <a style="padding-left: 1em;" href="https://mauri870.github.io/blog/tags/distributed-tracing">Distributed Tracing</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-opentracing-jaeger-to-the-rescue">1. Opentracing / Jaeger to the rescue</a></li>
+<li><a href="#2-integrating-jaeger-with-laravel">2. Integrating Jaeger with Laravel</a></li>
+</ul></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    <p>Microservices become the new standard for scalable and maintanable arquitectures. Monolithic aplications are splited into smaller pieces to keep things simple and decoupled. Tracing comes in hand when you need to aggregate the events during the request lifecycle between a single or multiple services.</p>
+
+<p></p>
+
+<hr />
+
+<p>Here at <a href="http://fluxoti.com">FluxoTi</a> we are beginning to split our monolith application into smaller services, backed by kubernetes. Since we already have smaller services that we want to connect, we need a way to trace the request lifecycle to find bottlenecks, errors and make the debug process more easy.</p>
+
+<h2 id="1-opentracing-jaeger-to-the-rescue">1. Opentracing / Jaeger to the rescue</h2>
+
+<p>There&rsquo;s many distributed tracing systems suck as Zipkin and Dapper, but they have incompatible APIs. Opentracing was created to fill this gap. By exposing a consistent, expressive, neutral API for popular platforms, add or switch between distributed tracing implementations becomes easy.</p>
+
+<p>Jaeger is inspired by OpenZipkin and Dapper and implements the Opentracing protocol. Jaeger has clients in Java, Go, NodeJS, Python, C++, PHP among others, that&rsquo;s exactly what we want. You can refer to the <a href="http://opentracing.io/documentation">Opentracing introduction</a> to understand the concepts behind a tracing system.</p>
+
+<h2 id="2-integrating-jaeger-with-laravel">2. Integrating Jaeger with Laravel</h2>
+
+<p>To integrate jaeger with laravel we&rsquo;ll need a jaeger package for php, like <a href="https://github.com/jukylin/jaeger-php">jukylin/jaeger-php</a>.</p>
+
+<p>There&rsquo;s only 3 structures that we need to use, a <code>Tracer</code>, a <code>Span</code> and the <code>Config</code>. If you have read the opentracing introduction you&rsquo;re probably familiar with these terms.</p>
+
+<p>To keep things simple I decide to build a wrapper around the framework events, to avoid as little modifications as possible, and keep adding aditional spans to track the services in the future.</p>
+
+<pre><code class="language-bash">composer require jukylin/jaeger-php:dev-master@dev  # jaeger php client
+composer require ramsey/uuid # uuid library for the unique request id
+</code></pre>
+
+<p>In a service provider, registered as early as possible, add the following content:</p>
+
+<pre><code class="language-php">public function boot()
+{
+  // Setup a unique ID for each request. This will allow us to find
+  // the request trace in the jaeger ui
+  $this-&gt;app-&gt;instance('context.uuid', Uuid::uuid1());
+
+  // Get the base config object
+  $config = Config::getInstance();
+
+  // If in development or testing, you can use this to change
+  // the tracer to a mocked one (NoopTracer)
+  //
+  // if (!app()-&gt;environment('production')) {
+  //     $config-&gt;setDisabled(true);
+  // }
+
+  // Start the tracer with a service name and the jaeger address
+  $tracer = $config-&gt;initTrace('my-app', 'jaeger:6831');
+
+  // Set the tracer as a singleton in the IOC container
+  $this-&gt;app-&gt;instance('context.tracer', $tracer);
+
+  // Start the global span, it'll wrap the request/console lifecycle
+  $globalSpan = $tracer-&gt;startSpan('app');
+  // Set the uuid as a tag for this trace
+  $globalSpan-&gt;setTags(['uuid' =&gt; app('context.uuid')-&gt;toString()]);
+
+  // If running in console (a.k.a a job or a command) set the
+  // type tag accordingly
+  $type = 'http';
+  if (app()-&gt;runningInConsole()) {
+      $type = 'console';
+  }
+  $globalSpan-&gt;setTags(['type' =&gt; $type]);
+
+  // Save the global span as a singleton too
+  $this-&gt;app-&gt;instance('context.tracer.globalSpan', $globalSpan);
+
+  // When the app terminates we must finish the global span
+  // and send the trace to the jaeger agent.
+  app()-&gt;terminating(function () {
+    app('context.tracer.globalSpan')-&gt;finish();
+    app('context.tracer')-&gt;flush();
+  });
+
+  // Listen for each logged message and attach it to the global span
+  Event::listen(MessageLogged::class, function (MessageLogged $e) {
+      app('context.tracer.globalSpan')-&gt;log((array) $e);
+  });
+
+  // Listen for the request handled event and set more tags for the trace
+  Event::listen(RequestHandled::class, function (RequestHandled $e) {
+      app('context.tracer.globalSpan')-&gt;setTags([
+          'user_id' =&gt; auth()-&gt;user()-&gt;id ?? &quot;-&quot;,
+          'company_id' =&gt; auth()-&gt;user()-&gt;company_id ?? &quot;-&quot;,
+
+          'request_host' =&gt; $e-&gt;request-&gt;getHost(),
+          'request_path' =&gt; $path = $e-&gt;request-&gt;path(),
+          'request_method' =&gt; $e-&gt;request-&gt;method(),
+
+          'api' =&gt; str_contains($path, 'api'),
+          'response_status' =&gt; $e-&gt;response-&gt;getStatusCode(),
+          'error' =&gt; !$e-&gt;response-&gt;isSuccessful(),
+      ]);
+  });
+
+  // Also listen for queries and log then,
+  // it also receives the log in the MessageLogged event above
+  DB::listen(function ($query) {
+      Log::debug(&quot;[DB Query] {$query-&gt;connection-&gt;getName()}&quot;, [
+          'query' =&gt; str_replace('&quot;', &quot;'&quot;, $query-&gt;sql),
+          'time' =&gt; $query-&gt;time.'ms',
+      ]);
+  });
+}
+</code></pre>
+
+<p>This is only an example, but you can set how many tags you want, how many logs you want, and also spawn how much spans you need. For example:</p>
+
+<pre><code class="language-php">// ...controller/service
+$tracer = app('context.tracer');
+$createCompanySpan = $tracer-&gt;startSpan('create company', [
+  'child_of' =&gt; app('context.tracer.globalSpan')
+]);
+
+$createUserSpan = $tracer-&gt;startSpan('create user', [
+  'child_of' =&gt; $createCompanySpan
+]);
+// call user service
+// ...
+// then finish the span...
+$createUserSpan-&gt;finish();
+
+// call company service
+// ...
+// then finish the span...
+$createCompanySpan-&gt;finish();
+</code></pre>
+
+<p>If we inject the correct trace id between microservice calls, the next service can continue the trace and at the end we have a complete distributed tracing, isn&rsquo;t that awesome?</p>
+
+<p><img src="../../images/posts/jaeger-laravel-tracing-example.png" alt="Jaeger Demo" /></p>
+
+<p>For a more concrete example, check out my <a href="https://github.com/mauri870/laravel-jaeger-demo">demo project</a>.</p>
+
+<p>See you again next time 😄.</p>
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/mauri870">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2018 <i class="fa fa-heart" aria-hidden="true"></i> Mauri de Souza Nunes
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://mauri870.github.io/blog/js/jquery-3.3.1.min.js"></script>
+<script src="https://mauri870.github.io/blog/js/main.js"></script>
+<script src="https://mauri870.github.io/blog/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>

@@ -6,10 +6,21 @@
     <description>Recent content in Posts on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 May 2018 21:22:56 -0300</lastBuildDate>
+    <lastBuildDate>Sun, 13 May 2018 22:26:06 -0300</lastBuildDate>
     
 	<atom:link href="https://mauri870.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using Opentracing/Jaeger with Laravel</title>
+      <link>https://mauri870.github.io/blog/posts/opentracing-jaeger-laravel/</link>
+      <pubDate>Sun, 13 May 2018 22:26:06 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/posts/opentracing-jaeger-laravel/</guid>
+      <description>&lt;p&gt;Microservices become the new standard for scalable and maintanable arquitectures. Monolithic aplications are splited into smaller pieces to keep things simple and decoupled. Tracing comes in hand when you need to aggregate the events during the request lifecycle between a single or multiple services.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Assembly Linux x64 - Part 1</title>
