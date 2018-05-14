@@ -21,11 +21,47 @@
     </item>
     
     <item>
+      <title>Distributed Tracing</title>
+      <link>https://mauri870.github.io/blog/tags/distributed-tracing/</link>
+      <pubDate>Sun, 13 May 2018 22:26:06 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/distributed-tracing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jaeger</title>
+      <link>https://mauri870.github.io/blog/tags/jaeger/</link>
+      <pubDate>Sun, 13 May 2018 22:26:06 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/jaeger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laravel</title>
+      <link>https://mauri870.github.io/blog/tags/laravel/</link>
+      <pubDate>Sun, 13 May 2018 22:26:06 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/laravel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linux</title>
       <link>https://mauri870.github.io/blog/tags/linux/</link>
       <pubDate>Tue, 08 May 2018 21:22:56 -0300</pubDate>
       
       <guid>https://mauri870.github.io/blog/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Opentracing</title>
+      <link>https://mauri870.github.io/blog/tags/opentracing/</link>
+      <pubDate>Sun, 13 May 2018 22:26:06 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/opentracing/</guid>
       <description></description>
     </item>
     
