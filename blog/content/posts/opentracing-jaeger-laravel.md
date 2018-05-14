@@ -7,7 +7,7 @@ tags: [
   "Jaeger",
   "Distributed Tracing"
 ]
-draft: true
+draft: false
 ---
 
 Microservices become the new standard for scalable and maintanable arquitectures. Monolithic aplications are splited into smaller pieces to keep things simple and decoupled. Tracing comes in hand when you need to aggregate the events during the request lifecycle between a single or multiple services.
