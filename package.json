@@ -14,7 +14,8 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
-    "prod": "yarn run test && yarn run build && git add dist && git commit -m \"Update site for production\" && git subtree push --prefix dist origin master"
+    "clean": "rm -r dist || true",
+    "prod": "yarn run test && yarn run clean && yarn run build && git add dist && git commit -m \"Update site for production\" && git subtree push --prefix dist origin master"
   },
   "dependencies": {
     "bootstrap": "^3.3.6",

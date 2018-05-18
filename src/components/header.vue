@@ -10,7 +10,7 @@
         .row.curriculum
           .col-md-8.col-md-offset-2
             .btn-group.btn-group-justified
-              a.btn.btn-site-color(href="static/docs/curricula/curriculum-en.pdf" target="_blank")
+              a.btn.btn-site-color(href="https://github.com/mauri870/curriculum-vitae/raw/master/cv.pdf" download)
                   i.fa.fa-file-text
                   |  Curriculum EN
               a.btn.btn-site-color(href="https://github.com/mauri870/certificates" target="_blank")
