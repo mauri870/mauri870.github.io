@@ -6,10 +6,21 @@
     <description>Recent content on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 May 2018 22:26:06 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 19 May 2018 12:35:00 -0300</lastBuildDate>
     
 	<atom:link href="https://mauri870.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to use a Golang client Tensorflow Serving Inception model</title>
+      <link>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</guid>
+      <description>&lt;p&gt;Tensorflow Serving is the most optimized way to serve a Tensorflow machine learning model in production. The official tutorials only cover the python client, so lets implement a Go/Golang one.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Using Opentracing/Jaeger with Laravel</title>

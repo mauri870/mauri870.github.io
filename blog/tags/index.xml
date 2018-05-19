@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 May 2018 21:22:56 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 19 May 2018 12:35:00 -0300</lastBuildDate>
     
 	<atom:link href="https://mauri870.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ai</title>
+      <link>https://mauri870.github.io/blog/tags/ai/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/ai/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Assembly</title>
@@ -26,6 +35,15 @@
       <pubDate>Sun, 13 May 2018 22:26:06 -0300</pubDate>
       
       <guid>https://mauri870.github.io/blog/tags/distributed-tracing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://mauri870.github.io/blog/tags/go/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/go/</guid>
       <description></description>
     </item>
     
@@ -62,6 +80,24 @@
       <pubDate>Sun, 13 May 2018 22:26:06 -0300</pubDate>
       
       <guid>https://mauri870.github.io/blog/tags/opentracing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tensorflow</title>
+      <link>https://mauri870.github.io/blog/tags/tensorflow/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/tensorflow/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tensorflow Serving</title>
+      <link>https://mauri870.github.io/blog/tags/tensorflow-serving/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/tensorflow-serving/</guid>
       <description></description>
     </item>
     
