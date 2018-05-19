@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>How to use a Golang client Tensorflow Serving Inception model</title>
+      <title>Writing a Golang client for the Tensorflow Serving Inception model</title>
       <link>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</link>
       <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
       
