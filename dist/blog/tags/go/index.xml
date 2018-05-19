@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on Mauri870&#39;s dev blog</title>
+    <link>https://mauri870.github.io/blog/tags/go/</link>
+    <description>Recent content in Go on Mauri870&#39;s dev blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 May 2018 12:35:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://mauri870.github.io/blog/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>How to use a Golang client Tensorflow Serving Inception model</title>
+      <link>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</guid>
+      <description>&lt;p&gt;Tensorflow Serving is the most optimized way to serve a Tensorflow machine learning model in production. The official tutorials only cover the python client, so lets implement a Go/Golang one.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
