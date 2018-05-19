@@ -1,5 +1,5 @@
 ---
-title: "How to use a Golang client Tensorflow Serving Inception model"
+title: "Writing a Golang client for the Tensorflow Serving Inception model"
 date: 2018-05-19T12:35:00-03:00
 tags: [
   "Go",
@@ -20,7 +20,7 @@ We have a Tensorflow Deep Learning model here at [FluxoTi](http://fluxoti.com) f
 
 ## 1. Train and export the model
 
-Since Tensorflow Serving is designed to serve Tensorflow models, we first need to train one. For the sake of simplicity, you can follow the [tutorials](https://www.tensorflow.org/serving/serving_inception) in order to export a pre-treined inception model. You can skip the Kubernetes part, we only need the final image with the compiled tensorflow serving server and the exported model. I'll probably write a post in the feature about how to export a custom model.
+Since Tensorflow Serving is designed to serve Tensorflow models, we first need to train one. For the sake of simplicity, you can follow the [tutorials](https://www.tensorflow.org/serving/serving_inception) in order to export a pre-treined inception model. You can skip the Kubernetes part, we only need the final image with the compiled tensorflow serving server and the exported model. I'll probably write a post in the future about how to export a custom model.
 
 ## 2. Preparing the proto files
 
@@ -61,10 +61,10 @@ Running this will create a directory called `tensorflow` and `tensorflow_serving
 
 ## 3. The Inception Go client
 
-You need the protobuf wrappers:
+You need the protobuf wrappers and the grpc package:
 
 ```bash
-go get github.com/golang/protobuf/ptypes/wrappers
+go get github.com/golang/protobuf/ptypes/wrappers google.golang.org/grpc
 ```
 
 Don't forget to run the serving server:
@@ -76,6 +76,7 @@ docker run --rm -p 10000:10000 your_serving_image
 And here is the client code:
 
 ```golang
+// save it as inception-client.go
 package main
 
 import (
