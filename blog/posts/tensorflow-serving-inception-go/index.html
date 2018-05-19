@@ -10,7 +10,7 @@
 
 ">
 		<meta name="generator" content="Hugo 0.40.3" />
-		<title>How to use a Golang client Tensorflow Serving Inception model &middot; Mauri870&#39;s dev blog</title>
+		<title>Writing a Golang client for the Tensorflow Serving Inception model &middot; Mauri870&#39;s dev blog</title>
 		<link rel="shortcut icon" href="https://mauri870.github.io/blog/images/favicon.ico">
 		<link rel="stylesheet" href="https://mauri870.github.io/blog/css/style.css">
 		<link rel="stylesheet" href="https://mauri870.github.io/blog/css/highlight.css">
@@ -49,11 +49,11 @@
             <article>
                 <header>
                     <h1>
-                        How to use a Golang client Tensorflow Serving Inception model
+                        Writing a Golang client for the Tensorflow Serving Inception model
                     </h1>
                     <h2 class="headline">
                     May 19, 2018 12:35
-                    · 516 words
+                    · 526 words
                     · 3 minute read
                       <span class="tags">
                       
@@ -99,7 +99,7 @@
 
 <h2 id="1-train-and-export-the-model">1. Train and export the model</h2>
 
-<p>Since Tensorflow Serving is designed to serve Tensorflow models, we first need to train one. For the sake of simplicity, you can follow the <a href="https://www.tensorflow.org/serving/serving_inception">tutorials</a> in order to export a pre-treined inception model. You can skip the Kubernetes part, we only need the final image with the compiled tensorflow serving server and the exported model. I&rsquo;ll probably write a post in the feature about how to export a custom model.</p>
+<p>Since Tensorflow Serving is designed to serve Tensorflow models, we first need to train one. For the sake of simplicity, you can follow the <a href="https://www.tensorflow.org/serving/serving_inception">tutorials</a> in order to export a pre-treined inception model. You can skip the Kubernetes part, we only need the final image with the compiled tensorflow serving server and the exported model. I&rsquo;ll probably write a post in the future about how to export a custom model.</p>
 
 <h2 id="2-preparing-the-proto-files">2. Preparing the proto files</h2>
 
@@ -139,9 +139,9 @@ eval &quot;protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/protobuf/{saver,me
 
 <h2 id="3-the-inception-go-client">3. The Inception Go client</h2>
 
-<p>You need the protobuf wrappers:</p>
+<p>You need the protobuf wrappers and the grpc package:</p>
 
-<pre><code class="language-bash">go get github.com/golang/protobuf/ptypes/wrappers
+<pre><code class="language-bash">go get github.com/golang/protobuf/ptypes/wrappers google.golang.org/grpc
 </code></pre>
 
 <p>Don&rsquo;t forget to run the serving server:</p>
@@ -151,7 +151,8 @@ eval &quot;protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/protobuf/{saver,me
 
 <p>And here is the client code:</p>
 
-<pre><code class="language-golang">package main
+<pre><code class="language-golang">// save it as inception-client.go
+package main
 
 import (
 	&quot;context&quot;
