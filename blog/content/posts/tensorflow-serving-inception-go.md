@@ -35,7 +35,7 @@ git clone https://github.com/tensorflow/serving.git
 Since the serving proto files depends on the tensorflow ones, clone the tensorflow repo too:
 
 ```bash
-git clone https://github.com/tensorflow/serving.git
+git clone https://github.com/tensorflow/tensorflow.git
 ```
 
 > Maybe using bazel you don't need to do these steps manually, but who uses bazel?? Probably only Google...
@@ -45,16 +45,17 @@ Then you need the protoc compiler, get it [here](github.com/google/protobuf). An
 Now you can compile the protos:
 
 ```bash
+mkdir -p vendor
 PROTOC_OPTS='-I tensorflow -I serving --go_out=plugins=grpc:vendor'
 
-eval "protoc $PROTOC_OPTS lib/serving/tensorflow_serving/apis/*.proto"
-eval "protoc $PROTOC_OPTS lib/serving/tensorflow_serving/config/*.proto"
-eval "protoc $PROTOC_OPTS lib/serving/tensorflow_serving/util/*.proto"
-eval "protoc $PROTOC_OPTS lib/serving/tensorflow_serving/sources/storage_path/*.proto"
-eval "protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/framework/*.proto"
-eval "protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/example/*.proto"
-eval "protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/lib/core/*.proto"
-eval "protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/protobuf/{saver,meta_graph}.proto"
+eval "protoc $PROTOC_OPTS serving/tensorflow_serving/apis/*.proto"
+eval "protoc $PROTOC_OPTS serving/tensorflow_serving/config/*.proto"
+eval "protoc $PROTOC_OPTS serving/tensorflow_serving/util/*.proto"
+eval "protoc $PROTOC_OPTS serving/tensorflow_serving/sources/storage_path/*.proto"
+eval "protoc $PROTOC_OPTS tensorflow/tensorflow/core/framework/*.proto"
+eval "protoc $PROTOC_OPTS tensorflow/tensorflow/core/example/*.proto"
+eval "protoc $PROTOC_OPTS tensorflow/tensorflow/core/lib/core/*.proto"
+eval "protoc $PROTOC_OPTS tensorflow/tensorflow/core/protobuf/{saver,meta_graph}.proto"
 ```
 
 Running this will create a directory called `tensorflow` and `tensorflow_serving` in the vendor directory.
