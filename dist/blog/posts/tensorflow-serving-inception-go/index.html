@@ -53,7 +53,7 @@
                     </h1>
                     <h2 class="headline">
                     May 19, 2018 12:35
-                    · 526 words
+                    · 529 words
                     · 3 minute read
                       <span class="tags">
                       
@@ -112,7 +112,7 @@
 
 <p>Since the serving proto files depends on the tensorflow ones, clone the tensorflow repo too:</p>
 
-<pre><code class="language-bash">git clone https://github.com/tensorflow/serving.git
+<pre><code class="language-bash">git clone https://github.com/tensorflow/tensorflow.git
 </code></pre>
 
 <blockquote>
@@ -123,16 +123,17 @@
 
 <p>Now you can compile the protos:</p>
 
-<pre><code class="language-bash">PROTOC_OPTS='-I tensorflow -I serving --go_out=plugins=grpc:vendor'
+<pre><code class="language-bash">mkdir -p vendor
+PROTOC_OPTS='-I tensorflow -I serving --go_out=plugins=grpc:vendor'
 
-eval &quot;protoc $PROTOC_OPTS lib/serving/tensorflow_serving/apis/*.proto&quot;
-eval &quot;protoc $PROTOC_OPTS lib/serving/tensorflow_serving/config/*.proto&quot;
-eval &quot;protoc $PROTOC_OPTS lib/serving/tensorflow_serving/util/*.proto&quot;
-eval &quot;protoc $PROTOC_OPTS lib/serving/tensorflow_serving/sources/storage_path/*.proto&quot;
-eval &quot;protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/framework/*.proto&quot;
-eval &quot;protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/example/*.proto&quot;
-eval &quot;protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/lib/core/*.proto&quot;
-eval &quot;protoc $PROTOC_OPTS lib/tensorflow/tensorflow/core/protobuf/{saver,meta_graph}.proto&quot;
+eval &quot;protoc $PROTOC_OPTS serving/tensorflow_serving/apis/*.proto&quot;
+eval &quot;protoc $PROTOC_OPTS serving/tensorflow_serving/config/*.proto&quot;
+eval &quot;protoc $PROTOC_OPTS serving/tensorflow_serving/util/*.proto&quot;
+eval &quot;protoc $PROTOC_OPTS serving/tensorflow_serving/sources/storage_path/*.proto&quot;
+eval &quot;protoc $PROTOC_OPTS tensorflow/tensorflow/core/framework/*.proto&quot;
+eval &quot;protoc $PROTOC_OPTS tensorflow/tensorflow/core/example/*.proto&quot;
+eval &quot;protoc $PROTOC_OPTS tensorflow/tensorflow/core/lib/core/*.proto&quot;
+eval &quot;protoc $PROTOC_OPTS tensorflow/tensorflow/core/protobuf/{saver,meta_graph}.proto&quot;
 </code></pre>
 
 <p>Running this will create a directory called <code>tensorflow</code> and <code>tensorflow_serving</code> in the vendor directory.</p>
