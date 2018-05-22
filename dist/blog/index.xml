@@ -6,10 +6,32 @@
     <description>Recent content on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 May 2018 12:35:00 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 21 May 2018 23:26:10 -0300</lastBuildDate>
     
 	<atom:link href="https://mauri870.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to export the CIFAR10 model to Tensorflow Serving</title>
+      <link>https://mauri870.github.io/blog/posts/exporting-cifar10-to-tensorflow-serving/</link>
+      <pubDate>Mon, 21 May 2018 23:26:10 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/posts/exporting-cifar10-to-tensorflow-serving/</guid>
+      <description>&lt;p&gt;The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. In this blog post I&amp;rsquo;ll cover how to export a trained CIFAR-10 tensorflow model to Tensorflow Serving.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Hello World Plan9!</title>
+      <link>https://mauri870.github.io/blog/posts/hello-world-plan9/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/posts/hello-world-plan9/</guid>
+      <description>&lt;p&gt;Plan9 is the little brother of Unix, developed with distributed computing in mind at Bell Labs in the 80s.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Writing a Golang client for the Tensorflow Serving Inception model</title>

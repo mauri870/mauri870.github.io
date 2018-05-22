@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 May 2018 12:35:00 -0300</lastBuildDate>
+    <lastBuildDate>Mon, 21 May 2018 23:26:10 -0300</lastBuildDate>
     
 	<atom:link href="https://mauri870.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Ai</title>
       <link>https://mauri870.github.io/blog/tags/ai/</link>
-      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      <pubDate>Mon, 21 May 2018 23:26:10 -0300</pubDate>
       
       <guid>https://mauri870.github.io/blog/tags/ai/</guid>
       <description></description>
@@ -26,6 +26,24 @@
       <pubDate>Tue, 08 May 2018 21:22:56 -0300</pubDate>
       
       <guid>https://mauri870.github.io/blog/tags/assembly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>C</title>
+      <link>https://mauri870.github.io/blog/tags/c/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/c/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cifar10</title>
+      <link>https://mauri870.github.io/blog/tags/cifar10/</link>
+      <pubDate>Mon, 21 May 2018 23:26:10 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/cifar10/</guid>
       <description></description>
     </item>
     
@@ -84,9 +102,27 @@
     </item>
     
     <item>
+      <title>Plan9</title>
+      <link>https://mauri870.github.io/blog/tags/plan9/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/plan9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://mauri870.github.io/blog/tags/python/</link>
+      <pubDate>Mon, 21 May 2018 23:26:10 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tensorflow</title>
       <link>https://mauri870.github.io/blog/tags/tensorflow/</link>
-      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      <pubDate>Mon, 21 May 2018 23:26:10 -0300</pubDate>
       
       <guid>https://mauri870.github.io/blog/tags/tensorflow/</guid>
       <description></description>
@@ -95,7 +131,7 @@
     <item>
       <title>Tensorflow Serving</title>
       <link>https://mauri870.github.io/blog/tags/tensorflow-serving/</link>
-      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      <pubDate>Mon, 21 May 2018 23:26:10 -0300</pubDate>
       
       <guid>https://mauri870.github.io/blog/tags/tensorflow-serving/</guid>
       <description></description>
