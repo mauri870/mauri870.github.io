@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ai on Mauri870&#39;s dev blog</title>
-    <link>https://mauri870.github.io/blog/tags/ai/</link>
-    <description>Recent content in Ai on Mauri870&#39;s dev blog</description>
+    <title>Python on Mauri870&#39;s dev blog</title>
+    <link>https://mauri870.github.io/blog/tags/python/</link>
+    <description>Recent content in Python on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 May 2018 23:26:10 -0300</lastBuildDate>
     
-	<atom:link href="https://mauri870.github.io/blog/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://mauri870.github.io/blog/tags/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,17 +18,6 @@
       
       <guid>https://mauri870.github.io/blog/posts/exporting-cifar10-to-tensorflow-serving/</guid>
       <description>&lt;p&gt;The CIFAR-10 dataset consists of 60000 32x32 colour images in 10 classes, with 6000 images per class. In this blog post I&amp;rsquo;ll cover how to export a trained CIFAR-10 tensorflow model to Tensorflow Serving.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Writing a Golang client for the Tensorflow Serving Inception model</title>
-      <link>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</link>
-      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
-      
-      <guid>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</guid>
-      <description>&lt;p&gt;Tensorflow Serving is the most optimized way to serve a Tensorflow machine learning model in production. The official tutorials only cover the python client, so lets implement a Go/Golang one.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;</description>
     </item>

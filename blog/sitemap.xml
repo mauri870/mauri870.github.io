@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://mauri870.github.io/blog/posts/exporting-cifar10-to-tensorflow-serving/</loc>
+    <lastmod>2018-05-21T23:26:10-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://mauri870.github.io/blog/posts/hello-world-plan9/</loc>
+    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</loc>
     <lastmod>2018-05-19T12:35:00-03:00</lastmod>
   </url>
@@ -24,7 +34,7 @@
   
   <url>
     <loc>https://mauri870.github.io/blog/tags/ai/</loc>
-    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
+    <lastmod>2018-05-21T23:26:10-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -35,7 +45,19 @@
   </url>
   
   <url>
+    <loc>https://mauri870.github.io/blog/tags/c/</loc>
+    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://mauri870.github.io/blog/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mauri870.github.io/blog/tags/cifar10/</loc>
+    <lastmod>2018-05-21T23:26:10-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -71,7 +93,7 @@
   
   <url>
     <loc>https://mauri870.github.io/blog/</loc>
-    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
+    <lastmod>2018-05-21T23:26:10-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -82,26 +104,38 @@
   </url>
   
   <url>
-    <loc>https://mauri870.github.io/blog/posts/</loc>
+    <loc>https://mauri870.github.io/blog/tags/plan9/</loc>
     <lastmod>2018-05-19T12:35:00-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mauri870.github.io/blog/posts/</loc>
+    <lastmod>2018-05-21T23:26:10-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://mauri870.github.io/blog/tags/python/</loc>
+    <lastmod>2018-05-21T23:26:10-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mauri870.github.io/blog/tags/</loc>
-    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
+    <lastmod>2018-05-21T23:26:10-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mauri870.github.io/blog/tags/tensorflow/</loc>
-    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
+    <lastmod>2018-05-21T23:26:10-03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://mauri870.github.io/blog/tags/tensorflow-serving/</loc>
-    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
+    <lastmod>2018-05-21T23:26:10-03:00</lastmod>
     <priority>0</priority>
   </url>
   

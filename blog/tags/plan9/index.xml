@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Plan9 on Mauri870&#39;s dev blog</title>
+    <link>https://mauri870.github.io/blog/tags/plan9/</link>
+    <description>Recent content in Plan9 on Mauri870&#39;s dev blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 May 2018 12:35:00 -0300</lastBuildDate>
+    
+	<atom:link href="https://mauri870.github.io/blog/tags/plan9/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World Plan9!</title>
+      <link>https://mauri870.github.io/blog/posts/hello-world-plan9/</link>
+      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/posts/hello-world-plan9/</guid>
+      <description>&lt;p&gt;Plan9 is the little brother of Unix, developed with distributed computing in mind at Bell Labs in the 80s.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
