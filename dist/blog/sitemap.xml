@@ -8,11 +8,6 @@
   </url>
   
   <url>
-    <loc>https://mauri870.github.io/blog/posts/hello-world-plan9/</loc>
-    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</loc>
     <lastmod>2018-05-19T12:35:00-03:00</lastmod>
   </url>
@@ -41,12 +36,6 @@
   <url>
     <loc>https://mauri870.github.io/blog/tags/assembly/</loc>
     <lastmod>2018-05-08T21:22:56-03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mauri870.github.io/blog/tags/c/</loc>
-    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -100,12 +89,6 @@
   <url>
     <loc>https://mauri870.github.io/blog/tags/opentracing/</loc>
     <lastmod>2018-05-13T22:26:06-03:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://mauri870.github.io/blog/tags/plan9/</loc>
-    <lastmod>2018-05-19T12:35:00-03:00</lastmod>
     <priority>0</priority>
   </url>
   
