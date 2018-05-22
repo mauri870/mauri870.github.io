@@ -23,17 +23,6 @@
     </item>
     
     <item>
-      <title>Hello World Plan9!</title>
-      <link>https://mauri870.github.io/blog/posts/hello-world-plan9/</link>
-      <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
-      
-      <guid>https://mauri870.github.io/blog/posts/hello-world-plan9/</guid>
-      <description>&lt;p&gt;Plan9 is the little brother of Unix, developed with distributed computing in mind at Bell Labs in the 80s.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Writing a Golang client for the Tensorflow Serving Inception model</title>
       <link>https://mauri870.github.io/blog/posts/tensorflow-serving-inception-go/</link>
       <pubDate>Sat, 19 May 2018 12:35:00 -0300</pubDate>
