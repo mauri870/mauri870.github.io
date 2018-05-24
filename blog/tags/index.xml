@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 May 2018 23:26:10 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 24 May 2018 00:05:00 -0300</lastBuildDate>
     
 	<atom:link href="https://mauri870.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Ai</title>
       <link>https://mauri870.github.io/blog/tags/ai/</link>
-      <pubDate>Mon, 21 May 2018 23:26:10 -0300</pubDate>
+      <pubDate>Thu, 24 May 2018 00:05:00 -0300</pubDate>
       
       <guid>https://mauri870.github.io/blog/tags/ai/</guid>
       <description></description>
@@ -102,9 +102,18 @@
     </item>
     
     <item>
+      <title>Sound Processing</title>
+      <link>https://mauri870.github.io/blog/tags/sound-processing/</link>
+      <pubDate>Thu, 24 May 2018 00:05:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/tags/sound-processing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tensorflow</title>
       <link>https://mauri870.github.io/blog/tags/tensorflow/</link>
-      <pubDate>Mon, 21 May 2018 23:26:10 -0300</pubDate>
+      <pubDate>Thu, 24 May 2018 00:05:00 -0300</pubDate>
       
       <guid>https://mauri870.github.io/blog/tags/tensorflow/</guid>
       <description></description>

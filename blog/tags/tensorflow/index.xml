@@ -6,10 +6,21 @@
     <description>Recent content in Tensorflow on Mauri870&#39;s dev blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 May 2018 23:26:10 -0300</lastBuildDate>
+    <lastBuildDate>Thu, 24 May 2018 00:05:00 -0300</lastBuildDate>
     
 	<atom:link href="https://mauri870.github.io/blog/tags/tensorflow/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Audio Spectrograms in Tensorflow</title>
+      <link>https://mauri870.github.io/blog/posts/audio-spectrograms-in-tensorflow/</link>
+      <pubDate>Thu, 24 May 2018 00:05:00 -0300</pubDate>
+      
+      <guid>https://mauri870.github.io/blog/posts/audio-spectrograms-in-tensorflow/</guid>
+      <description>&lt;p&gt;A Spectrogram is a picture of sound. A common approach for audio classification tasks is to use spectrograms as input and simply treat the audio as an image. After several tries I finally got an optimized way to integrate the spectrogram generation pipeline into the tensorflow computational graph.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>How to export the CIFAR10 model to Tensorflow Serving</title>
