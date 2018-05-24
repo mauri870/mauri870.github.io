@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    <meta name="author" content="Mauri de Souza Nunes">
+    <meta name="description" content="A Spectrogram is a picture of sound. A common approach for audio classification tasks is to use spectrograms as input and simply treat the audio as an image. After several tries I finally got an optimized way to integrate the spectrogram generation pipeline into the tensorflow computational graph.
+
+">
+		<meta name="generator" content="Hugo 0.40.3" />
+		<title>Audio Spectrograms in Tensorflow &middot; Mauri870&#39;s dev blog</title>
+		<link rel="shortcut icon" href="https://mauri870.github.io/blog/images/favicon.ico">
+		<link rel="stylesheet" href="https://mauri870.github.io/blog/css/style.css">
+		<link rel="stylesheet" href="https://mauri870.github.io/blog/css/highlight.css">
+
+		
+		<link rel="stylesheet" href="https://mauri870.github.io/blog/css/font-awesome.min.css">
+		
+
+		
+		<link href="https://mauri870.github.io/blog/index.xml" rel="alternate" type="application/rss+xml" title="Mauri870&#39;s dev blog" />
+		
+
+		
+	</head>
+
+    <body>
+       <nav class="main-nav">
+  <a href='/'>Home</a>
+	
+	
+		<a href='https://mauri870.github.io/blog/'> <span class="arrow">←</span>Blog</a>
+	
+	<a href='https://mauri870.github.io/blog/posts'>Archive</a>
+	<a href='https://mauri870.github.io/blog/tags'>Tags</a>
+	<a href='https://mauri870.github.io/blog/about'>About</a>
+
+	
+
+	
+	<a class="cta" href="https://mauri870.github.io/blog/index.xml">Subscribe</a>
+	
+</nav>
+
+
+        <section id="wrapper" class="post">
+            <article>
+                <header>
+                    <h1>
+                        Audio Spectrograms in Tensorflow
+                    </h1>
+                    <h2 class="headline">
+                    May 24, 2018 00:05
+                    · 801 words
+                    · 4 minute read
+                      <span class="tags">
+                      
+                      
+                          
+                              <a style="padding-left: 1em;" href="https://mauri870.github.io/blog/tags/ai">AI</a>
+                          
+                              <a style="padding-left: 1em;" href="https://mauri870.github.io/blog/tags/tensorflow">Tensorflow</a>
+                          
+                              <a style="padding-left: 1em;" href="https://mauri870.github.io/blog/tags/sound-processing">Sound Processing</a>
+                          
+                      
+                      
+                      </span>
+                    </h2>
+                </header>
+                
+                  
+                    <div id="toc">
+                      <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#1-the-naive-approach">1. The naive approach</a></li>
+<li><a href="#2-improving-the-spectrogram-generation">2. Improving the spectrogram generation</a></li>
+</ul></li>
+</ul>
+</nav>
+                    </div>
+                  
+                
+                <section id="post-body">
+                    <p>A Spectrogram is a picture of sound. A common approach for audio classification tasks is to use spectrograms as input and simply treat the audio as an image. After several tries I finally got an optimized way to integrate the spectrogram generation pipeline into the tensorflow computational graph.</p>
+
+<p></p>
+
+<hr />
+
+<p>We have a model for audio classification here at <a href="http://fluxoti.com">FluxoTi</a> running in production running about 100 thousand times a day for about one and a half year now. As we started researching about audio classification, we see that several people have achieved good results using <a href="http://cs231n.github.io/convolutional-networks">Convolutional Neural Networks</a> applied on audio spectrograms. Our only problem was how to generate those spectrograms prior to feed then to the model 🤔.</p>
+
+<h2 id="1-the-naive-approach">1. The naive approach</h2>
+
+<p>In the first release of the project we have basically two applications: the tfrecords / train / eval tensorflow pipeline written in python and the production api written in Go.</p>
+
+<p>Yes, we do serve the tensorflow exported model from Go, using CGO&hellip; <strong>What a mistake.</strong></p>
+
+<p>I mean, using Go was not a mistake, it&rsquo;s an incredible language and I love it. But serving the tensorflow model from Go (using the tensorflow CGO wrapper) use a LOT of ram after some weeks, reaching about 1GB each instance&hellip; Probably was a sort of memory leak, I tried to debug it but CGO is always on the way&hellip;</p>
+
+<p>To generate the spectrogram in this first release we decided to use sox, it&rsquo;s a common command line utility for audio conversion and manipulation. Basically what we did was get the audio in the API and then save on disk, run the sox on the received sample, saving the generated spectrogram and then load the image bytes into a Tensorflow Tensor that we feed into the model.</p>
+
+<p>Something like this:</p>
+
+<pre><code class="language-bash">sox audio.gsm -n spectrogram -x 128 -y 128 -A -z 50 -Z -20 -r -o spectrogram.png
+</code></pre>
+
+<p>However tests in production showed that we are hitting storage too hard. Storing and reading from disk about 2 or 3 times per request was pretty bad, so we cut out storage usage by using <a href="http://www.linfo.org/pipes.html">pipes</a> everywhere:</p>
+
+<pre><code class="language-bash"> # In Go we fill the sox stdin with a buffer containing the gsm audio bytes
+ # readed directly from request.
+ sox -t gsm - -n spectrogram -x 128 -y 128 -A -z 50 -Z -20 -r -o -
+ # PNG encoded image is contained in stdout buffer.
+</code></pre>
+
+<blockquote>
+<p>We also found a known <a href="https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=823417">sox bug</a> with input/output pipes on Debian, which we solve compiling from source.</p>
+</blockquote>
+
+<h2 id="2-improving-the-spectrogram-generation">2. Improving the spectrogram generation</h2>
+
+<p>A couple of months ago I begin to refactor the project to use <a href="https://www.tensorflow.org/serving/">Tensorflow Serving</a>. The api was also lightweight now, it talks Protobuf through gRPC to the serving service and we don&rsquo;t have more memory leaks to worry about 😅. Each serving pod uses around 50MB of ram and the api 20MB. We keep the same sox approach as described above.</p>
+
+<p>But sox isn&rsquo;t perfect&hellip; Segfaults happen randomly and the api cpu usage is higher bacause of the encoding / decoding operations.</p>
+
+<p>Reading about the tensorflow contrib package I found some interesting ops, including a <code>audio_spectrogram</code>. With some work I replaced the entire sox pipeline by using the tensorflow computations, the api no longer deal with the preprocessing stuff. The only downside is that the ffmpeg ops don&rsquo;t support gsm, however it&rsquo;s ok for us to use wav instead.</p>
+
+<p>Here&rsquo;s an adapted example that you can run by itself:</p>
+
+<pre><code class="language-python">import tensorflow as tf
+from tensorflow.contrib.framework.python.ops import audio_ops
+
+# Wav file name
+wav_file = tf.placeholder(tf.string)
+
+# Read the wav file
+audio_binary = tf.read_file(wav_file)
+
+# Decode the wav mono into a 2D tensor with time in dimension 0
+# and channel along dimension 1
+waveform = audio_ops.decode_wav(audio_binary, file_format='wav', desired_channels=1)
+
+# Compute the spectrogram
+spectrogram = audio_ops.audio_spectrogram(
+        waveform.audio,
+        window_size=1024,
+        stride=64)
+
+# Custom brightness
+brightness = tf.placeholder(tf.float32, shape=[])
+mul = tf.multiply(spectrogram, brightness)
+
+# Normalize pixels
+min_const = tf.constant(255.)
+minimum =  tf.minimum(mul, min_const)
+
+# Expand dims so we get the proper shape
+expand_dims = tf.expand_dims(minimum, -1)
+
+# Resize the spectrogram to input size of the model
+resize = tf.image.resize_bilinear(expand_dims, [128, 128])
+
+# Remove the trailing dimension
+squeeze = tf.squeeze(resize, 0)
+
+# Tensorflow spectrogram has time along y axis and frequencies along x axis
+# so we fix that
+squeeze = tf.image.flip_left_right(squeeze)
+squeeze = tf.image.transpose_image(squeeze)
+
+# Convert image to 3 channels, it's still a grayscale image however
+squeeze = tf.image.grayscale_to_rgb(squeeze)
+
+# Cast to uint8 and encode as png
+cast = tf.cast(squeeze, tf.uint8)
+png = tf.image.encode_png(cast)
+
+with tf.Session() as sess:
+    # Run the computation graph and save the png encoded image to a file
+    image = sess.run(png, feed_dict={
+      wav_file: 'your_file.wav', brightness: 100})
+
+    with open('output.png', 'wb') as f:
+        f.write(image)
+</code></pre>
+
+<p>And it&rsquo;s pretty fast too, we reach about <strong>30 to 50 milliseconds</strong> including the preprocessing stuff and the model inference, that&rsquo;s pretty cool.</p>
+
+<p>See you again next time 😄.</p>
+                </section>
+            </article>
+
+            
+
+            
+
+            
+
+            <footer id="footer">
+    
+        <div id="social">
+
+	
+	
+    <a class="symbol" href="https://www.github.com/mauri870">
+        <i class="fa fa-github-square"></i>
+    </a>
+    
+
+
+</div>
+
+    
+    <p class="small">
+    
+       © Copyright 2018 <i class="fa fa-heart" aria-hidden="true"></i> Mauri de Souza Nunes
+    
+    </p>
+    <p class="small">
+        Powered by <a href="http://www.gohugo.io/">Hugo</a> Theme By <a href="https://github.com/nodejh/hugo-theme-cactus-plus">nodejh</a>
+    </p>
+</footer>
+
+        </section>
+
+        <script src="https://mauri870.github.io/blog/js/jquery-3.3.1.min.js"></script>
+<script src="https://mauri870.github.io/blog/js/main.js"></script>
+<script src="https://mauri870.github.io/blog/js/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+
+    </body>
+</html>
