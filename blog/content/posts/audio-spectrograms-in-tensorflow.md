@@ -15,7 +15,7 @@ A Spectrogram is a picture of sound. A common approach for audio classification 
 
 ---
 
-We have a model for audio classification here at [FluxoTi](http://fluxoti.com) running in production running about 100 thousand times a day for about one and a half year now. As we started researching about audio classification, we see that several people have achieved good results using [Convolutional Neural Networks](http://cs231n.github.io/convolutional-networks) applied on audio spectrograms. Our only problem was how to generate those spectrograms prior to feed then to the model 🤔.
+We have a model for audio classification here at [FluxoTi](http://fluxoti.com) running in production about 100 thousand times a day for about one and a half year now. As we started researching about audio classification, we see that several people have achieved good results using [Convolutional Neural Networks](http://cs231n.github.io/convolutional-networks) applied to audio spectrograms. Our only problem was how to generate those spectrograms prior to feed then to the model 🤔.
 
 ## 1. The naive approach
 
@@ -93,14 +93,14 @@ squeeze = tf.squeeze(resize, 0)
 
 # Tensorflow spectrogram has time along y axis and frequencies along x axis
 # so we fix that
-squeeze = tf.image.flip_left_right(squeeze)
-squeeze = tf.image.transpose_image(squeeze)
+flip = tf.image.flip_left_right(squeeze)
+transpose = tf.image.transpose_image(flip)
 
 # Convert image to 3 channels, it's still a grayscale image however
-squeeze = tf.image.grayscale_to_rgb(squeeze)
+grayscale = tf.image.grayscale_to_rgb(transpose)
 
 # Cast to uint8 and encode as png
-cast = tf.cast(squeeze, tf.uint8)
+cast = tf.cast(grayscale, tf.uint8)
 png = tf.image.encode_png(cast)
 
 with tf.Session() as sess:
