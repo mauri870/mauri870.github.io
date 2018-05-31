@@ -957,10 +957,6 @@ bootstrap@^3.3.6:
   version "3.3.7"
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
 
-bower@^1.7.9:
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/bower/-/bower-1.8.0.tgz#55dbebef0ad9155382d9e9d3e497c1372345b44a"
-
 brace-expansion@^1.0.0:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.7.tgz#3effc3c50e000531fb720eaff80f0ae8ef23cf59"
@@ -5968,6 +5964,10 @@ type-is@~1.6.14:
   dependencies:
     media-typer "0.3.0"
     mime-types "~2.1.15"
+
+typed.js@^2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.7.tgz#d4041ff351bc8995f9f8b6f54a2a23606b365e1a"
 
 typedarray@^0.0.6, typedarray@~0.0.5:
   version "0.0.6"

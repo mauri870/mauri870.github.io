@@ -20,21 +20,19 @@
 </template>
 
 <script>
-import $ from 'jquery'
 import { mapGetters } from 'vuex'
-import '../../bower_components/typed.js/js/typed'
+import Typed from 'typed.js'
 
 export default {
   name: 'Header',
   mounted () {
-    let vm = this
-    $(function () {
-      $('.typed').typed({
-        strings: vm.$options.filters.shuffleArray(vm.skills),
-        typeSpeed: 0,
-        loop: true
-      })
-    })
+    let options = {
+      strings: this.$options.filters.shuffleArray(this.skills),
+      typeSpeed: 40,
+      backSpeed: 50,
+      loop: true
+    }
+    new Typed('.typed', options) // eslint-disable-line no-new
   },
   computed: {
     ...mapGetters({
