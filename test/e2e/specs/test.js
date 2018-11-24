@@ -7,6 +7,7 @@ module.exports = {
       .assert.containsText('h3', 'My skills')
       .assert.elementPresent('.logo')
       .assert.elementCount('.project', 12)
+      .assert.elementCount('#social .row .col-lg-3 a', 4)
       .end()
   },
   'mauri870.github.io e2e test 404': browser => {
