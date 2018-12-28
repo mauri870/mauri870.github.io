@@ -2,6 +2,13 @@ export default {
   state: {
     projects: [
       {
+        name: 'Entr',
+        link: 'https://github.com/mauri870/entr',
+        description: 'Cross platform way to run arbitrary commands when files change',
+        techs: ['rust', 'kqueue', 'epool', 'inotify', 'File Watcher'],
+        image: require('../../assets/img/portfolio/rust.png')
+      },
+      {
         name: 'Ransomware',
         link: 'https://github.com/mauri870/ransomware',
         description: 'A crypto-ransomware written in pure go (Academic)',

@@ -2,11 +2,11 @@ module.exports = {
   'mauri870.github.io e2e test index': browser => {
     browser
     .url('http://localhost:8080')
-      .waitForElementVisible('#headerwrap', 1000)
+      .waitForElementVisible('#headerwrap', 20000)
       .assert.title('Mauri de Souza Nunes - Website')
       .assert.containsText('h3', 'My skills')
       .assert.elementPresent('.logo')
-      .assert.elementCount('.project', 12)
+      .assert.elementCount('.project', 13)
       .assert.elementCount('#social .row .col-lg-3 a', 4)
       .end()
   },
