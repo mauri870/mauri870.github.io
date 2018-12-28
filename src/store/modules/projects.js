@@ -2,6 +2,20 @@ export default {
   state: {
     projects: [
       {
+        name: 'AMD (Private)',
+        link: 'https://gitlab.fluxoti.com/mauri870',
+        description: 'Answering machine detection using deep convolutional neural networks',
+        techs: ['golang', 'python', 'tensorflow', 'CNN'],
+        image: require('../../assets/img/portfolio/amd.png')
+      },
+      {
+        name: 'Webphone (Private)',
+        link: 'https://gitlab.fluxoti.com/mauri870',
+        description: 'Custom softphone sharing 99% code for webapp, mobile and web extension',
+        techs: ['cordova', 'socket.io', 'vuex', 'webpack', 'VueJS'],
+        image: require('../../assets/img/portfolio/webphone.png')
+      },
+      {
         name: 'Entr',
         link: 'https://github.com/mauri870/entr',
         description: 'Cross platform way to run arbitrary commands when files change',
