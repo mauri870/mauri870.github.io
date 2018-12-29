@@ -26,13 +26,13 @@ export default {
         name: 'Ransomware',
         link: 'https://github.com/mauri870/ransomware',
         description: 'A crypto-ransomware written in pure go (Academic)',
-        techs: ['Go', 'Malware', 'Security', 'Cryptography'],
+        techs: ['Golang', 'Malware', 'Windows', 'Crypto', 'Tor'],
         image: require('../../assets/img/portfolio/security-padlock.png')
       },
       {
         name: 'Baking Pi',
         link: 'https://github.com/mauri870/baking-pi',
-        description: 'Operating Systems development',
+        description: 'Operating Systems development in RPi 3',
         techs: ['Assembly', 'ARM', 'OS'],
         image: require('../../assets/img/portfolio/assembly.png')
       },
@@ -40,28 +40,21 @@ export default {
         name: 'Assembly Fun',
         link: 'https://github.com/mauri870/problems-assembly',
         description: 'Some fun in assembly linux x64',
-        techs: ['Assembly', 'x64', 'Syscalls', 'Linux'],
+        techs: ['Assembly', 'x64', 'Syscall', 'Linux'],
         image: require('../../assets/img/portfolio/assembly.png')
       },
       {
         name: 'Kaggle Cats vs Dogs Redux',
         link: 'https://github.com/mauri870/kaggle-cats-vs-dogs-redux',
         description: 'Solution for the 51st place on the Kaggle Cats vs Dogs Redux competition',
-        techs: ['Go', 'Deep Learning', 'Kaggle', 'Tensorflow'],
+        techs: ['Golang', 'Deep Learning', 'Kaggle', 'Tensorflow'],
         image: require('../../assets/img/portfolio/machine-learning.png')
-      },
-      {
-        name: 'Cryptofile',
-        link: 'https://github.com/mauri870/cryptofile',
-        description: 'Encrypt or decrypt files using AES-256 or AES-128',
-        techs: ['Go', 'Security', 'Cryptography'],
-        image: require('../../assets/img/portfolio/security-padlock.png')
       },
       {
         name: 'Powershell Reverse Http',
         link: 'https://github.com/mauri870/powershell-reverse-http',
         description: 'A Powershell exploit, windows native service with no virus signature that open a reverse http connection via meterpreter',
-        techs: ['Go', 'Exploit', 'Metasploit Framework'],
+        techs: ['Golang', 'Exploit', 'Windows', 'Metasploit Framework'],
         image: require('../../assets/img/portfolio/exploit.png')
       },
       {
@@ -72,11 +65,25 @@ export default {
         image: require('../../assets/img/portfolio/cloudradioo-app.png')
       },
       {
-        name: 'Laravel Skeleton Api',
-        link: 'https://github.com/mauri870/api-skeleton-laravel',
-        description: 'An API Skeleton for Laravel 5.1 with JWT',
-        techs: ['Laravel', 'JWT', 'REST'],
-        image: require('../../assets/img/portfolio/laravel-package.png')
+        name: 'MNIST PHP-FANN',
+        link: 'https://github.com/mauri870/php-fann-mnist',
+        description: 'MNIST trained in PHP using neural networks with the FANN library',
+        techs: ['PHP', 'MNIST', 'NN', 'fann'],
+        image: require('../../assets/img/portfolio/machine-learning.png')
+      },
+      {
+        name: 'Arch Linux dot files and configs',
+        link: 'https://github.com/mauri870/dot-files',
+        description: 'My arch linux rice',
+        techs: ['i3wm', 'arch-linux', 'polybar'],
+        image: require('../../assets/img/portfolio/linuxatemyram.png')
+      },
+      {
+        name: 'Cryptofile',
+        link: 'https://github.com/mauri870/cryptofile',
+        description: 'Encrypt or decrypt files using AES-256 or AES-128',
+        techs: ['Golang', 'Security', 'Crypto'],
+        image: require('../../assets/img/portfolio/security-padlock.png')
       },
       {
         name: 'Laravel Docs',
@@ -86,17 +93,24 @@ export default {
         image: require('../../assets/img/portfolio/artesaos-package.png')
       },
       {
-        name: 'Laravel Installer',
-        link: 'https://github.com/artesaos/laravel-installer',
-        description: 'Install laravel framework with any version you want',
-        techs: ['Laravel'],
-        image: require('../../assets/img/portfolio/artesaos-package.png')
-      },
-      {
         name: 'Defender',
         link: 'https://github.com/artesaos/defender',
         description: 'Roles & Permissions for Laravel 5',
         techs: ['Laravel', 'Package'],
+        image: require('../../assets/img/portfolio/artesaos-package.png')
+      },
+      {
+        name: 'Laravel Skeleton Api',
+        link: 'https://github.com/mauri870/api-skeleton-laravel',
+        description: 'An API Skeleton for Laravel 5.1 with JWT',
+        techs: ['Laravel', 'JWT', 'REST'],
+        image: require('../../assets/img/portfolio/laravel-package.png')
+      },
+      {
+        name: 'Laravel Installer',
+        link: 'https://github.com/artesaos/laravel-installer',
+        description: 'Install laravel framework with any version you want',
+        techs: ['Laravel'],
         image: require('../../assets/img/portfolio/artesaos-package.png')
       },
       {

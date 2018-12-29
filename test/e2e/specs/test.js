@@ -6,7 +6,7 @@ module.exports = {
       .assert.title('Mauri de Souza Nunes - Website')
       .assert.containsText('h3', 'My skills')
       .assert.elementPresent('.logo')
-      .assert.elementCount('.project', 15)
+      .assert.elementCount('.project', 17)
       .assert.elementCount('#social .row .col-lg-3 a', 4)
       .end()
   },

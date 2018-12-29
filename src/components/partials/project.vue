@@ -3,7 +3,7 @@
     h3 {{ item.name }}
     a(:href="item.link" target="_blank")
       img.img-responsive(:src="item.image" class="img-responsive")
-    span.label.label(v-for="tech in item.techs") {{ tech }}
+    span.label.label(v-for="tech in item.techs") {{ tech.toLowerCase() }}
     p.description {{ item.description }}
 </template>
 
