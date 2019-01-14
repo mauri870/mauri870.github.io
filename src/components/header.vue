@@ -8,14 +8,11 @@
             h1
               span.typed
         .row.curriculum
-          .col-md-8.col-md-offset-2
+          .col-md-2.col-md-offset-5
             .btn-group.btn-group-justified
               a.btn.btn-site-color(href="https://docs.google.com/viewer?url=https://github.com/mauri870/curriculum-vitae/raw/master/cv.pdf" download)
                   i.fa.fa-file-text
-                  |  Curriculum EN
-              a.btn.btn-site-color(href="https://github.com/mauri870/certificates" target="_blank")
-                  i.fa.fa-file-text
-                  |  Certificates
+                  |  Curriculum
     .span#control-navbar
 </template>
 

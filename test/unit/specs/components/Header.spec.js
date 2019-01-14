@@ -16,9 +16,7 @@ describe('Header.vue', () => {
       store,
       render: h => h(VcHeader)
     }).$mount()
-    expect(vm.$el.querySelectorAll('.curriculum a')[0].textContent).to.contain('Curriculum EN')
+    expect(vm.$el.querySelectorAll('.curriculum a')[0].textContent).to.contain('Curriculum')
     expect(vm.$el.querySelectorAll('.curriculum a')[0].href).to.contains('https://github.com/mauri870/curriculum-vitae/raw/master/cv.pdf')
-    expect(vm.$el.querySelectorAll('.curriculum a')[1].textContent).to.contain('Certificates')
-    expect(vm.$el.querySelectorAll('.curriculum a')[1].href).to.eql('https://github.com/mauri870/certificates')
   })
 })
