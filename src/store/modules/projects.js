@@ -75,7 +75,7 @@ export default {
         name: 'Arch Linux dot files and configs',
         link: 'https://github.com/mauri870/dot-files',
         description: 'My arch linux rice',
-        techs: ['i3wm', 'arch-linux', 'polybar'],
+        techs: ['i3wm', 'arch-linux', 'polybar', 'dunst'],
         image: require('../../assets/img/portfolio/linuxatemyram.png')
       },
       {
