@@ -2,24 +2,31 @@ export default {
   state: {
     projects: [
       {
-        name: 'AMD (Private)',
-        link: 'https://gitlab.fluxoti.com/mauri870',
-        description: 'Answering machine detection using deep convolutional neural networks',
-        techs: ['golang', 'python', 'tensorflow', 'CNN'],
+        name: 'AMD',
+        link: 'https://mauri870.github.io/blog/posts/audio-spectrograms-in-tensorflow',
+        description: 'Answering machine detection applied to outbound calls using deep convolutional neural networks',
+        techs: ['golang', 'python', 'tensorflow', 'docker'],
         image: require('../../assets/img/portfolio/amd.png')
       },
       {
-        name: 'Webphone (Private)',
+        name: 'Webphone',
         link: 'https://gitlab.fluxoti.com/mauri870',
-        description: 'Custom softphone sharing 99% code for webapp, mobile and web extension',
-        techs: ['cordova', 'socket.io', 'vuex', 'webpack', 'VueJS'],
+        description: 'Custom softphone sharing 99% code for web, mobile app and web extension',
+        techs: ['cordova', 'socket.io', 'vuex', 'webpack', 'VueJS', 'docker'],
         image: require('../../assets/img/portfolio/webphone.png')
+      },
+      {
+        name: 'Asterisk AMD Application',
+        link: 'https://gitlab.fluxoti.com/mauri870',
+        description: 'AMD client as an Asterisk PABX plugin. Library written in Rust and glue code in C',
+        techs: ['rust', 'C', 'ffi', 'asterisk'],
+        image: require('../../assets/img/portfolio/rust.png')
       },
       {
         name: 'Entr',
         link: 'https://github.com/mauri870/entr',
         description: 'Cross platform way to run arbitrary commands when files change',
-        techs: ['rust', 'kqueue', 'epool', 'inotify', 'File Watcher'],
+        techs: ['rust', 'kqueue', 'epool', 'inotify'],
         image: require('../../assets/img/portfolio/rust.png')
       },
       {
