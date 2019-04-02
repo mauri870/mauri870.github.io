@@ -3,7 +3,8 @@
     h3 {{ item.name }}
     a(:href="item.link" target="_blank")
       img.img-responsive(:src="item.image" class="img-responsive")
-    span.label.label(v-for="tech in item.techs") {{ tech.trim().replace(" ", "-").toLowerCase() }}
+    .techs
+      span.label.label(v-for="tech in item.techs") {{ tech.trim().replace(" ", "-").toLowerCase() }}
     p.description {{ item.description }}
 </template>
 
@@ -15,13 +16,9 @@
 
 <style lang="scss">
   @import "../../assets/sass/variables.scss";
-  .description {
-    min-height: 100px;
-    font-weight: 500;
-  }
-
   .project {
     margin-top: 30px;
+
     img {
       opacity: 0.4;
       transition: all .2s ease-in-out;
@@ -30,10 +27,22 @@
         transform: scale(1.1);
       }
     }
-    span {
-      background-color: $default-color;
-      margin-right: 2px;
-      font-size: 13px;
+
+    .description {
+      min-height: 100px;
+      font-weight: 500;
+    }
+
+    .techs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      span {
+        background-color: $default-color;
+        margin: 2px;
+        font-size: 13px;
+      }
     }
   }
 </style>
