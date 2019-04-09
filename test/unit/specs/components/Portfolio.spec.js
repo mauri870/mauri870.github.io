@@ -8,6 +8,6 @@ describe('Portfolio.vue', () => {
       render: h => h(Portfolio),
       store
     }).$mount()
-    expect(vm.$el.querySelector('#works .row p').textContent).to.contain('Some projects that I have worked on')
+    expect(vm.$el.querySelector('#works .row p').textContent).to.contain('Some projects that I worked on')
   })
 })
