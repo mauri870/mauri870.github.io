@@ -14,8 +14,7 @@
             b {{ phrase | uppercase }}
         .col-lg-4
         .col-lg-4
-          p
-            a(:href="mailto") {{ email }}
+          p {{ email }}
       .col-sm-12.text-center
         p Find the
           i.fa.fa-code

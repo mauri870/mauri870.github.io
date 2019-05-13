@@ -9,7 +9,7 @@
           span.icon-bar
           span.icon-bar
         a.navbar-brand.logo(href="/") M
-        a#hiring(href="#" @click.prevent="clickHireMe") Contact Me!
+        a#hiring(href="#footerwrap") Contact Me!
       .navbar-collapse.collapse
         ul.nav.navbar-nav.navbar-right
           li
@@ -25,21 +25,10 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import $ from 'jquery'
 
 export default {
   name: 'Navbar',
-  computed: {
-    ...mapGetters({
-      email: 'infoEmail'
-    })
-  },
-  methods: {
-    clickHireMe () {
-      window.location.href = `mailto:${this.email}`
-    }
-  },
   mounted () {
     $(window).on('scroll', function () {
       let navbar = $('#navbar-menu')
