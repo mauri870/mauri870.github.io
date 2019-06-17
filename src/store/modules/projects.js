@@ -51,6 +51,13 @@ export default {
         image: require('../../assets/img/portfolio/assembly.png')
       },
       {
+        name: 'syscall(3)',
+        link: 'https://github.com/mauri870/syscall',
+        description: 'Linux port of Plan9 syscall(3)',
+        techs: ['c', 'linux', 'plan9', 'syscall'],
+        image: require('../../assets/img/portfolio/linuxatemyram.png')
+      },
+      {
         name: 'Kaggle Cats vs Dogs Redux',
         link: 'https://github.com/mauri870/kaggle-cats-vs-dogs-redux',
         description: 'Solution for the 51st place on the Kaggle Cats vs Dogs Redux competition',
