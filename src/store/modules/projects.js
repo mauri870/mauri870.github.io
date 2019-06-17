@@ -51,9 +51,9 @@ export default {
         image: require('../../assets/img/portfolio/assembly.png')
       },
       {
-        name: 'syscall(3)',
+        name: 'syscall(1)',
         link: 'https://github.com/mauri870/syscall',
-        description: 'Linux port of Plan9 syscall(3)',
+        description: 'Linux port of Plan9 syscall(1)',
         techs: ['c', 'linux', 'plan9', 'syscall'],
         image: require('../../assets/img/portfolio/linuxatemyram.png')
       },
