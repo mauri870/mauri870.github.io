@@ -5,7 +5,7 @@ export default {
         name: 'AMD',
         link: 'https://mauri870.github.io/blog/posts/audio-spectrograms-in-tensorflow',
         description: 'Answering machine detection applied to outbound calls using deep convolutional neural networks',
-        techs: ['golang', 'python', 'tensorflow', 'docker'],
+        techs: ['golang', 'python', 'tensorflow', 'docker', 'grpc'],
         image: require('../../assets/img/portfolio/amd.png')
       },
       {
@@ -18,8 +18,8 @@ export default {
       {
         name: 'Asterisk AMD Application',
         link: 'https://gitlab.fluxoti.com/mauri870',
-        description: 'AMD client as an Asterisk PABX plugin. Library written in Rust and glue code in C',
-        techs: ['rust', 'C', 'ffi', 'asterisk'],
+        description: 'AMD gRPC client as an Asterisk PABX plugin. Library written in Rust and glue code in C',
+        techs: ['rust', 'C', 'ffi', 'asterisk', 'grpc', 'protobuf'],
         image: require('../../assets/img/portfolio/rust.png')
       },
       {
