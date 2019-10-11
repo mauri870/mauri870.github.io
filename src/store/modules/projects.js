@@ -45,7 +45,7 @@ export default {
       },
       {
         name: 'Assembly Fun',
-        link: 'https://github.com/mauri870/problems-assembly',
+        link: 'https://github.com/mauri870/assembly-fun',
         description: 'Some fun in assembly linux x64',
         techs: ['Assembly', 'x64', 'Syscall', 'Linux'],
         image: require('../../assets/img/portfolio/assembly.png')
