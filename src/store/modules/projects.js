@@ -30,6 +30,13 @@ export default {
         image: require('../../assets/img/portfolio/rust.png')
       },
       {
+        name: 'kubectl renew',
+        link: 'https://github.com/mauri870/kubectl-renew',
+        description: 'Kubectl plugin to renew(restart, start fresh) a single or all pods in a deployment',
+        techs: ['shell', 'kubernetes', 'kubectl', 'plugin'],
+        image: require('../../assets/img/portfolio/kubernetes.png')
+      },
+      {
         name: 'Ransomware',
         link: 'https://github.com/mauri870/ransomware',
         description: 'A crypto-ransomware written in pure go (Academic)',
