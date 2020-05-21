@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="0">
+
+  <testsuite name="test"
+    errors="1" failures="0" hostname="" id="" package="test" skipped="2"
+    tests="0" time="0.000" timestamp="">
+  
+
+  
+    <system-err>
+      [0;31m  Error: An error occurred while retrieving a new session: &#34;session not created: This version of ChromeDriver only supports Chrome version 80&#34;[0m
+[0;90m       at endReadableNT (_stream_readable.js:1224:12)
+       at processTicksAndRejections (internal/process/task_queues.js:84:21)[0m
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="mauri870.github.io e2e test index" classname="test">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="mauri870.github.io e2e test 404" classname="test">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

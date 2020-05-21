@@ -3,18 +3,18 @@
 </template>
 
 <script>
-import $ from 'jquery'
-import '../assets/js/fakeLoader'
+import $ from 'jquery';
+import '../assets/js/fakeLoader';
 
 export default {
   name: 'Fakeloader',
-  mounted () {
-    $(document).ready(function () {
+  mounted() {
+    $(document).ready(() => {
       // Init Fakeloader
-      $('#fakeLoader').fakeLoader({spinner: 'spinner1', bgColor: '#1ABC9C'})
-    })
-  }
-}
+      $('#fakeLoader').fakeLoader({ spinner: 'spinner1', bgColor: '#1ABC9C' });
+    });
+  },
+};
 </script>
 
 <style>

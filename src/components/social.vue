@@ -13,16 +13,16 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex'
+import { mapGetters } from 'vuex';
 
-  export default {
-    name: 'Social',
-    computed: {
-      ...mapGetters({
-        networks: 'networks'
-      })
-    }
-  }
+export default {
+  name: 'Social',
+  computed: {
+    ...mapGetters({
+      networks: 'networks',
+    }),
+  },
+};
 </script>
 
 <style lang="scss">

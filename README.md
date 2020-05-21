@@ -4,9 +4,9 @@
 
 My personal website built with:
  - VueJS 2.0
- - Webpack 2.0
- - Vuex 2.0
- - Vue Router 2.0
+ - Webpack 4.0
+ - Vuex 3.0
+ - Vue Router 3.0
  - SCSS
  - Pug
 
@@ -17,7 +17,7 @@ My personal website built with:
 yarn install
 
 # serve with hot reload at localhost:8080
-yarn run dev
+yarn run serve
 
 # build for production with minification
 yarn run build

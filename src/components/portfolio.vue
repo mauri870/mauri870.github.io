@@ -11,20 +11,20 @@
 </template>
 
 <script>
-import Project from '@/components/partials/project'
-import { mapGetters } from 'vuex'
+import Project from '@/components/partials/project.vue';
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'Portfolio',
   computed: {
     ...mapGetters({
-      projects: 'projects'
-    })
+      projects: 'projects',
+    }),
   },
   components: {
-    Project
-  }
-}
+    Project,
+  },
+};
 </script>
 
 <style lang="scss" scoped>
