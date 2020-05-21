@@ -17,33 +17,33 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import Typed from 'typed.js'
+import { mapGetters } from 'vuex';
+import Typed from 'typed.js';
 
 export default {
   name: 'Header',
-  mounted () {
-    let options = {
+  mounted() {
+    const options = {
       strings: this.$options.filters.shuffleArray(this.skills),
       typeSpeed: 40,
       backSpeed: 50,
-      loop: true
-    }
-    new Typed('.typed', options) // eslint-disable-line no-new
+      loop: true,
+    };
+    new Typed('.typed', options); // eslint-disable-line no-new
   },
   computed: {
     ...mapGetters({
-      skills: 'infoSkills'
-    })
-  }
-}
+      skills: 'infoSkills',
+    }),
+  },
+};
 </script>
 
 <style lang="scss">
   @import "../assets/sass/mixins.scss";
 
   #headerwrap {
-    @include content-default
+    @include content-default;
     background: url(../assets/img/work.jpg) no-repeat center top;
     background-attachment: relative;
     background-position: center center;

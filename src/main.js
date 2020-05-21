@@ -1,22 +1,17 @@
-// Import default styles
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap/dist/js/bootstrap'
-import 'font-awesome/css/font-awesome.css'
+import Vue from 'vue';
+import Site from '@/site';
+import store from '@/store';
+import router from '@/router';
+import { initAnalytics } from './utils/analytics';
+import './filters';
 
-import Vue from 'vue'
-import Site from '@/site'
-import store from '@/store'
-import router from '@/router'
-import './filters'
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.css';
+import 'font-awesome/css/font-awesome.css';
 
-Vue.config.productionTip = false
+initAnalytics('UA-79904458-1');
 
-import {initAnalytics} from './utils/analytics'
+Vue.config.productionTip = false;
 
-initAnalytics('UA-79904458-1')
-
-/* eslint-disable no-new */
-var site = new Vue({ store, router, render: h => h(Site) })
-
-site.$mount('site')
-
+const site = new Vue({ store, router, render: (h) => h(Site) });
+site.$mount('site');

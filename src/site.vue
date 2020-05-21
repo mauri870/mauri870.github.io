@@ -12,10 +12,10 @@
 </template>
 
 <script>
-import FakeLoader from '@/components/fakeloader.vue'
-import NavbarSite from '@/components/navbar.vue'
-import SocialSection from '@/components/social.vue'
-import FooterSite from '@/components/footer.vue'
+import FakeLoader from '@/components/fakeloader.vue';
+import NavbarSite from '@/components/navbar.vue';
+import SocialSection from '@/components/social.vue';
+import FooterSite from '@/components/footer.vue';
 
 export default {
   name: 'Site',
@@ -23,14 +23,14 @@ export default {
     FakeLoader,
     NavbarSite,
     SocialSection,
-    FooterSite
-  }
-}
+    FooterSite,
+  },
+};
 </script>
 
 <style lang="scss">
   @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700), "assets/sass/variables.scss";
-  
+
   body{
     font-family: $default-font;
     font-weight: $default-font-weight;
@@ -58,7 +58,7 @@ export default {
     a {
       color: white;
       &:hover {
-        color: $default-color;
+        color: $default-color !important;
         text-decoration: none;
       }
     }
@@ -82,6 +82,6 @@ export default {
 
     .mb {
       margin-bottom: 80px;
-    } 
+    }
   }
 </style>
