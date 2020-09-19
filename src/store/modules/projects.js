@@ -94,7 +94,7 @@ export default {
         image: require('../../assets/img/portfolio/machine-learning.png'),
       },
       {
-        name: 'Arch Linux dot files and configs',
+        name: 'My Arch Linux dot files',
         link: 'https://github.com/mauri870/dot-files',
         description: 'My arch linux rice',
         techs: ['i3wm', 'arch-linux', 'polybar', 'dunst'],

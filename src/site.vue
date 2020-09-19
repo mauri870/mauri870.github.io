@@ -1,14 +1,14 @@
 <template lang="pug">
-  div
-    fake-loader
+div
+  fake-loader
 
-    navbar-site
+  navbar-site
 
-    router-view
+  router-view
 
-    social-section
+  social-section
 
-    footer-site
+  footer-site
 </template>
 
 <script>

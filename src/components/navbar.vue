@@ -1,24 +1,24 @@
 <template lang="pug">
-  .navbar.navbar-default.navbar-fixed-top#navbar-menu(role="navigation")
-    .container
-      .navbar-header
-        button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-collapse")
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        a.navbar-brand.logo(href="/") M
-      .navbar-collapse.collapse
-        ul.nav.navbar-nav.navbar-right
-          li
-            a(href="blog/" target="_self")
-              i.fa.fa-rss.fa-2x
-          li
-            a(href="http://github.com/mauri870" target="_blank")
-              i.fa.fa-github.fa-2x
-          li
-            a(href="https://www.kaggle.com/mauri870" target="_blank")
-              img(src="../assets/img/kaggle.svg")
+.navbar.navbar-default.navbar-fixed-top#navbar-menu(role="navigation")
+  .container
+    .navbar-header
+      button.navbar-toggle(type="button" data-toggle="collapse" data-target=".navbar-collapse")
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand.logo(href="/") M
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav.navbar-right
+        li
+          a(href="blog/" target="_self")
+            i.fa.fa-rss.fa-2x
+        li
+          a(href="http://github.com/mauri870" target="_blank")
+            i.fa.fa-github.fa-2x
+        li
+          a(href="https://www.kaggle.com/mauri870" target="_blank")
+            img(src="../assets/img/kaggle.svg")
 </template>
 
 <script>

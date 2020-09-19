@@ -1,12 +1,12 @@
 <template lang="pug">
-    #blog-section
-      .container
-        .row.centered
-          .col-lg-12
-            h1
-              | Check out my
-              a(href="blog/") dev blog
-              |  !
+#blog-section
+  .container
+    .row.centered
+      .col-lg-12
+        h1
+          | Check out my
+          a(href="blog/") dev blog
+          |  !
 </template>
 <style lang="scss">
   @import '../assets/sass/variables.scss';

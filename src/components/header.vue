@@ -1,30 +1,31 @@
 <template lang="pug">
-  div
-    #headerwrap
-      .container
-        .row
-          .col-lg-12
-            h3 My skills
-            h1
-              span.typed
-        .row.curriculum
-          .col-md-2.col-md-offset-5
-            .btn-group.btn-group-justified
-              a.btn.btn-site-color(href="https://docs.google.com/viewer?url=https://github.com/mauri870/curriculum-vitae/raw/master/cv.pdf" download)
-                  i.fa.fa-file-text
-                  |  Curriculum
-    .span#control-navbar
+div
+  #headerwrap
+    .container
+      .row
+        .col-lg-12
+          h3 My skills
+          h1
+            span.typed
+      .row.curriculum
+        .col-md-2.col-md-offset-5
+          .btn-group.btn-group-justified
+            a.btn.btn-site-color(href="https://docs.google.com/viewer?url=https://github.com/mauri870/curriculum-vitae/raw/master/cv.pdf" download)
+                i.fa.fa-file-text
+                |  Curriculum
+  .span#control-navbar
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
 import Typed from 'typed.js';
+import utils from '@/utils';
 
 export default {
   name: 'Header',
   mounted() {
     const options = {
-      strings: this.$options.filters.shuffleArray(this.skills),
+      strings: utils.shuffle(this.skills),
       typeSpeed: 40,
       backSpeed: 50,
       loop: true,

@@ -1,13 +1,13 @@
 <template lang="pug">
-  section#works
-    .container
-      .row.centered.mt.mb
-        h1 I
-          i.fa.fa-heart.heart.fa-pulse
-          |  coding
-        p Some projects that I worked on:
+section#works
+  .container
+    .row.centered.mt.mb
+      h1 I
+        i.fa.fa-heart.heart.fa-pulse
+        |  coding
+      p Some projects that I worked on:
 
-        project(v-for="project in projects", :item="project", :key="project.id")
+      project(v-for="project in projects", :item="project", :key="project.id")
 </template>
 
 <script>

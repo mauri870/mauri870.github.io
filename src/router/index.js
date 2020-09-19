@@ -1,15 +1,13 @@
-import Vue from 'vue';
-import VueRouter from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router';
 import Index from '@/pages/index.vue';
 import NotFound from '@/pages/404.vue';
 
-Vue.use(VueRouter);
-
-const router = new VueRouter({
+const router = createRouter({
   base: __dirname,
+  history: createWebHistory(),
   routes: [
     { path: '/', name: 'index', component: Index },
-    { path: '*', name: 'notfound', component: NotFound },
+    { path: '/*', name: 'notfound', component: NotFound },
   ],
 });
 
