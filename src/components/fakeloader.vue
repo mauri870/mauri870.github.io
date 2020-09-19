@@ -1,5 +1,5 @@
 <template lang="pug">
-    #fakeLoader
+#fakeLoader
 </template>
 
 <script>

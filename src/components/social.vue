@@ -1,15 +1,15 @@
 <template lang="pug">
-  #social
-    .container
-      .row.centered
-        .col-lg-12
-          h2 Stay connected!
-          br
-        .col-lg-3.networks(v-for="network in networks")
-          a(:href="network.link" target="_blank")
-            i(:class="network.icon")
-        .col-lg-12
-          img.center-block.gopher(src="../assets/img/gopher.png")
+#social
+  .container
+    .row.centered
+      .col-lg-12
+        h2 Stay connected!
+        br
+      .col-lg-3.networks(v-for="network in networks")
+        a(:href="network.link" target="_blank")
+          i(:class="network.icon")
+      .col-lg-12
+        img.center-block.gopher(src="../assets/img/gopher.png")
 </template>
 
 <script>

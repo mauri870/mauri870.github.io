@@ -1,11 +1,11 @@
 <template lang="pug">
-  .col-sm-4.project
-    h3 {{ item.name }}
-    a(:href="item.link" target="_blank")
-      img.img-responsive(:src="item.image" class="img-responsive")
-    .techs
-      span.label.label(v-for="tech in item.techs") {{ tech.trim().replace(" ", "-").toLowerCase() }}
-    p.description {{ item.description }}
+.col-sm-4.project
+  h3 {{ item.name }}
+  a(:href="item.link" target="_blank")
+    img.img-responsive(:src="item.image" class="img-responsive")
+  .techs
+    span.label.label(v-for="tech in item.techs") {{ tech.trim().replace(" ", "-").toLowerCase() }}
+  p.description {{ item.description }}
 </template>
 
 <script>

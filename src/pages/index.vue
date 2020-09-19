@@ -1,10 +1,10 @@
 <template lang="pug">
-  div
-    header-wrap
+div
+  header-wrap
 
-    blog-section
+  blog-section
 
-    my-portfolio
+  my-portfolio
 </template>
 
 <script>

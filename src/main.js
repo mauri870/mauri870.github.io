@@ -1,17 +1,16 @@
-import Vue from 'vue';
+import { createApp } from 'vue';
 import Site from '@/site';
 import store from '@/store';
 import router from '@/router';
-import { initAnalytics } from './utils/analytics';
-import './filters';
+import utils from '@/utils';
 
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
 
-initAnalytics('UA-79904458-1');
+utils.initAnalytics('UA-79904458-1');
 
-Vue.config.productionTip = false;
-
-const site = new Vue({ store, router, render: (h) => h(Site) });
-site.$mount('site');
+const site = createApp(Site);
+site.use(store);
+site.use(router);
+site.mount('site');

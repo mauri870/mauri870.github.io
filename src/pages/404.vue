@@ -1,19 +1,19 @@
 <template lang="pug">
-  div
-    #content
-      .container
-        .row
-          .col-lg-6.col-lg-offset-3
-            h1
-              i.fa.fa-warning.fa-2x
-              br
-              |  Sorry but the page you are looking for could not be found
-            router-link(:to="{ name: 'index'}")
-              button.btn.btn-default.btn-lg
-                i.fa.fa-home
-                |  Take me home
-            img.center-block.img-responsive(src="../assets/img/gophersworking.png")
-    .span#control-navbar
+div
+  #content
+    .container
+      .row
+        .col-lg-6.col-lg-offset-3
+          h1
+            i.fa.fa-warning.fa-2x
+            br
+            |  Sorry but the page you are looking for could not be found
+          router-link(:to="{ name: 'index'}")
+            button.btn.btn-default.btn-lg
+              i.fa.fa-home
+              |  Take me home
+          img.center-block.img-responsive(src="../assets/img/gophersworking.png")
+  .span#control-navbar
 </template>
 
 <script>
