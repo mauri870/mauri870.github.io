@@ -7,7 +7,8 @@
         span.icon-bar
         span.icon-bar
         span.icon-bar
-      a.navbar-brand.logo(href="/") M
+      a.navbar-brand(href="/")
+        img(width="30" height="30" src="favicon.svg")
     .navbar-collapse.collapse
       ul.nav.navbar-nav.navbar-right
         li
@@ -50,10 +51,6 @@ export default {
     .navbar-brand {
       color: $default-color;
       font-weight: 700;
-    }
-
-    .logo {
-      font-size: xx-large;
     }
 
     .navbar-nav {
