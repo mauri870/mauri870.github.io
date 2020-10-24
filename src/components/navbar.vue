@@ -15,8 +15,11 @@
           a(href="blog/" target="_self")
             i.fa.fa-rss.fa-2x
         li
-          a(href="http://github.com/mauri870" target="_blank")
+          a(href="https://github.com/mauri870" target="_blank")
             i.fa.fa-github.fa-2x
+        li
+          a(href="https://instagram.com/maurismeneguzzo" target="_blank")
+            i.fa.fa-instagram.fa-2x
         li
           a(href="https://www.kaggle.com/mauri870" target="_blank")
             img(src="../assets/img/kaggle.svg")
