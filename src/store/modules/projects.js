@@ -3,9 +3,16 @@ export default {
   state: {
     projects: [
       {
+        name: 'AMD 2',
+        link: 'https://mauri870.github.io/blog/posts/audio-spectrograms-in-tensorflow',
+        description: 'Faster, Better, Cheaper Answering Machine Detection using 1D convolutional neural networks',
+        techs: ['python', 'tensorflow2', 'docker', 'grpc'],
+        image: require('../../assets/img/portfolio/amd2.png'),
+      },
+      {
         name: 'AMD',
         link: 'https://mauri870.github.io/blog/posts/audio-spectrograms-in-tensorflow',
-        description: 'Answering machine detection applied to outbound calls using deep convolutional neural networks',
+        description: 'Answering Machine Detection applied to outbound calls using deep 2D convolutional neural networks',
         techs: ['golang', 'python', 'tensorflow', 'docker', 'grpc'],
         image: require('../../assets/img/portfolio/amd.png'),
       },
@@ -19,7 +26,7 @@ export default {
       {
         name: 'Asterisk AMD Application',
         link: 'https://gitlab.fluxoti.com/mauri870',
-        description: 'AMD gRPC client as an Asterisk PABX plugin. Library written in Rust and glue code in C',
+        description: 'AMD gRPC client as an Asterisk PABX plugin',
         techs: ['rust', 'C', 'ffi', 'asterisk', 'grpc', 'protobuf'],
         image: require('../../assets/img/portfolio/rust.png'),
       },

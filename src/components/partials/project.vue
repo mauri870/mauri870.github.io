@@ -1,6 +1,6 @@
 <template lang="pug">
 .col-sm-4.project
-  h3 {{ item.name }}
+  h3.title {{ item.name }}
   a(:href="item.link" target="_blank")
     img.img-responsive(:src="item.image" class="img-responsive")
   .techs
@@ -26,6 +26,11 @@ export default {
         opacity: 0.8;
         transform: scale(1.1);
       }
+    }
+
+    .title {
+      text-align: center;
+      min-height: 50px
     }
 
     .description {
