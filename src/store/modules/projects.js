@@ -4,14 +4,14 @@ export default {
     projects: [
       {
         name: 'AMD 2',
-        link: 'https://mauri870.github.io/blog/posts/audio-spectrograms-in-tensorflow',
+        link: '/blog/posts/amd2-improvements/',
         description: 'Faster, Better, Cheaper Answering Machine Detection using 1D convolutional neural networks',
         techs: ['python', 'tensorflow2', 'docker', 'grpc'],
         image: require('../../assets/img/portfolio/amd2.png'),
       },
       {
         name: 'AMD',
-        link: 'https://mauri870.github.io/blog/posts/audio-spectrograms-in-tensorflow',
+        link: '/blog/posts/audio-spectrograms-in-tensorflow',
         description: 'Answering Machine Detection applied to outbound calls using deep 2D convolutional neural networks',
         techs: ['golang', 'python', 'tensorflow', 'docker', 'grpc'],
         image: require('../../assets/img/portfolio/amd.png'),
