@@ -25,7 +25,7 @@ export default {
       },
       {
         name: 'gcsfs',
-        link: 'https://gitlab.fluxoti.com/mauri870',
+        link: 'https://github.com/mauri870/gcsfs',
         description: 'Golang io/fs implementation for Google Cloud Storage ',
         techs: ['golang'],
         image: require('../../assets/img/portfolio/golang.png'),
