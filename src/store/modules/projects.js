@@ -24,6 +24,13 @@ export default {
         image: require('../../assets/img/portfolio/webphone.png'),
       },
       {
+        name: 'gcsfs',
+        link: 'https://gitlab.fluxoti.com/mauri870',
+        description: 'Golang io/fs implementation for Google Cloud Storage ',
+        techs: ['golang'],
+        image: require('../../assets/img/portfolio/golang.png'),
+      },
+      {
         name: 'Asterisk AMD Application',
         link: 'https://gitlab.fluxoti.com/mauri870',
         description: 'AMD gRPC client as an Asterisk PABX plugin',
