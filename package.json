@@ -2,7 +2,7 @@
   "name": "mauri870.github.io",
   "version": "1.0.0",
   "description": "Mauri870's personal website",
-  "author": "Mauri de Souza Nunes <mauri870@gmail.com>",
+  "author": "Mauri de Souza Meneguzzo <mauri870@gmail.com>",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
