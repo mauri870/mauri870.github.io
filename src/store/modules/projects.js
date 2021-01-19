@@ -89,7 +89,7 @@ export default {
       {
         name: 'Powershell Reverse Http',
         link: 'https://github.com/mauri870/powershell-reverse-http',
-        description: 'A Powershell exploit, windows native service with no virus signature that open a reverse http connection via meterpreter',
+        description: 'A Powershell exploit, windows native service that opens a reverse http connection via meterpreter',
         techs: ['Golang', 'Exploit', 'Windows', 'Metasploit Framework'],
         image: require('../../assets/img/portfolio/exploit.png'),
       },
