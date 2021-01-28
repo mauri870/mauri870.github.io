@@ -19,8 +19,8 @@ export default {
       {
         name: 'Webphone',
         link: 'https://gitlab.fluxoti.com/mauri870',
-        description: 'Custom softphone sharing 99% code for web, mobile app and web extension',
-        techs: ['cordova', 'socket.io', 'vuex', 'webpack', 'VueJS'],
+        description: 'Custom softphone with click-to-call and integrations sharing 99% code for web, hybrid mobile app and web extension',
+        techs: ['cordova', 'websockets', 'webrtc', 'vuex', 'webpack', 'VueJS'],
         image: require('../../assets/img/portfolio/webphone.png'),
       },
       {
