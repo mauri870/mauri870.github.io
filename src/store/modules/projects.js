@@ -38,8 +38,8 @@ export default {
         image: require('../../assets/img/portfolio/rust.png'),
       },
       {
-        name: 'Entr',
-        link: 'https://github.com/mauri870/entr',
+        name: 'iowatch',
+        link: 'https://github.com/mauri870/iowatch',
         description: 'Cross platform way to run arbitrary commands when files change',
         techs: ['rust', 'kqueue', 'epool', 'inotify'],
         image: require('../../assets/img/portfolio/rust.png'),
