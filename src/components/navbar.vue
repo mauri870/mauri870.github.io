@@ -8,7 +8,7 @@
         span.icon-bar
         span.icon-bar
       a.navbar-brand(href="/")
-        img(width="30" height="30" src="favicon.svg")
+        img(width="30" height="30" src="favicon.svg" title="Героям слава! Slava Ukraini!")
     .navbar-collapse.collapse
       ul.nav.navbar-nav.navbar-right
         li
