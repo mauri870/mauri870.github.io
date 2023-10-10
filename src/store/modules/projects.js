@@ -3,6 +3,20 @@ export default {
   state: {
     projects: [
       {
+        name: 'Golang',
+        link: 'https://go-review.googlesource.com/q/author:mauri870@gmail.com',
+        description: 'Contributions to the language and toolchain',
+        techs: ['Golang'],
+        image: require('../../assets/img/portfolio/golang.png'),
+      },
+      {
+        name: 'SwishNet Pytorch',
+        link: 'https://github.com/mauri870/swishnet-pytorch',
+        description: 'SwishNet (arXiv:1812.00149) implemented in PyTorch',
+        techs: ['python', 'pytorch', 'Deep Learning'],
+        image: require('../../assets/img/portfolio/machine-learning.png'),
+      },
+      {
         name: 'AMD 2',
         link: '/blog/posts/amd2-improvements/',
         description: 'Faster, Better, Cheaper Answering Machine Detection using 1D convolutional neural networks',
@@ -19,8 +33,8 @@ export default {
       {
         name: 'Webphone',
         link: 'https://gitlab.fluxoti.com/mauri870',
-        description: 'Custom softphone with click-to-call and integrations sharing 99% code for web, hybrid mobile app and web extension',
-        techs: ['cordova', 'websockets', 'webrtc', 'vuex', 'webpack', 'VueJS'],
+        description: 'Custom softphone with click-to-call and integrations. Web, mobile app and web extension',
+        techs: ['cordova', 'webrtc', 'VueJS'],
         image: require('../../assets/img/portfolio/webphone.png'),
       },
       {
