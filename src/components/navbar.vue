@@ -8,7 +8,7 @@
         span.icon-bar
         span.icon-bar
       a.navbar-brand(href="/")
-        img(width="30" height="30" src="favicon.svg" title="Героям слава! Slava Ukraini!")
+        img(width="30" height="30" src="favicon.svg" title=":)")
     .navbar-collapse.collapse
       ul.nav.navbar-nav.navbar-right
         li
@@ -26,46 +26,45 @@
 </template>
 
 <script>
-import $ from 'jquery';
+import $ from "jquery";
 
 export default {
-  name: 'Navbar',
+  name: "Navbar",
   mounted() {
-    $(window).on('scroll', () => {
-      const navbar = $('#navbar-menu');
-      if ($(this).scrollTop() >= $('#control-navbar').position().top) {
-        navbar.addClass('nav-second-color');
+    $(window).on("scroll", () => {
+      const navbar = $("#navbar-menu");
+      if ($(this).scrollTop() >= $("#control-navbar").position().top) {
+        navbar.addClass("nav-second-color");
       } else {
-        navbar.removeClass('nav-second-color');
+        navbar.removeClass("nav-second-color");
       }
     });
   },
-
 };
 </script>
 
 <style lang="scss" scoped>
-  @import "../assets/sass/variables.scss";
+@import "../assets/sass/variables.scss";
 
-  .navbar-default {
-    background-color: transparent;
-    border-color: transparent;
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
 
-    .navbar-brand {
+  .navbar-brand {
+    color: $default-color;
+    font-weight: 700;
+  }
+
+  .navbar-nav {
+    a {
       color: $default-color;
-      font-weight: 700;
-    }
-
-    .navbar-nav {
-      a {
-        color: $default-color;
-        background-color: transparent;
-      }
+      background-color: transparent;
     }
   }
+}
 
-  .nav-second-color {
-    background-color:#fff;
-    color:#444;
-  }
+.nav-second-color {
+  background-color: #fff;
+  color: #444;
+}
 </style>
