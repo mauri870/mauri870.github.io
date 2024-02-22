@@ -1,6 +1,6 @@
-# mauri870.github.io
+# mauri870.com
 
-[![Build Status](https://travis-ci.org/mauri870/mauri870.github.io.svg?branch=develop)](https://travis-ci.org/mauri870/mauri870.github.io)
+[![Build Status](https://travis-ci.org/mauri870/mauri870.com.svg?branch=develop)](https://travis-ci.org/mauri870/mauri870.com)
 
 My personal website built with:
  - VueJS 3.0

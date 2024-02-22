@@ -19,13 +19,11 @@
       p Find the
         i.fa.fa-code
         |  of this project on
-        a(href="http://github.com/mauri870/mauri870.github.io" target="_blank")
+        a(href="http://github.com/mauri870/mauri870.com" target="_blank")
           i.fa.fa-github.fa-2x
       p Built with
         i.fa.fa-heart.heart
         |  on top of Vue 3, Vuex, Vue Router, SCSS, Pug and Webpack 4
-    .col-sm-12.text-center
-      img(src="https://api.travis-ci.org/mauri870/mauri870.github.io.svg?branch=develop")
 </template>
 
 <script>

@@ -1,5 +1,5 @@
 {
-  "name": "mauri870.github.io",
+  "name": "mauri870.com",
   "version": "1.0.0",
   "description": "Mauri870's personal website",
   "author": "Mauri de Souza Meneguzzo <mauri870@gmail.com>",
@@ -11,7 +11,7 @@
     "test:e2e": "vue-cli-service test:e2e",
     "lint": "vue-cli-service lint",
     "clean": "rm -r dist || true",
-    "prod": "git add dist && git commit -m \"Update production bundle\" && git subtree push --prefix dist origin master"
+    "prod": "yarn build && git add dist && git commit -m \"Update production bundle\" && git subtree push --prefix dist origin master"
   },
   "dependencies": {
     "bootstrap": "^3.3.6",
