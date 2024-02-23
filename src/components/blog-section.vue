@@ -5,7 +5,7 @@
       .col-lg-12
         h1
           | Check out my
-          a(href="blog/") dev blog
+          a(href="https://blog.mauri870.com") dev blog
           |  !
 </template>
 <style lang="scss">
