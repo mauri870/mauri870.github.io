@@ -10,7 +10,7 @@ import 'font-awesome/css/font-awesome.css';
 
 (() => {
   if (window.location.href === 'https://mauri870.github.io/') {
-    window.location.href = 'https:/mauri870.com';
+    window.location.href = 'https://mauri870.com';
     return;
   }
 
