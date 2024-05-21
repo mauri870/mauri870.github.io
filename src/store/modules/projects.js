@@ -10,6 +10,13 @@ export default {
         image: require('../../assets/img/portfolio/golang.png'),
       },
       {
+        name: 'Cyber Defense Institute',
+        link: 'https://idciber.com',
+        description: 'Public commitee for the Cyber Defense Institute',
+        techs: ['cybersecurity'],
+        image: require('../../assets/img/portfolio/idciber.png'),
+      },
+      {
         name: 'SwishNet Pytorch',
         link: 'https://github.com/mauri870/swishnet-pytorch',
         description: 'SwishNet (arXiv:1812.00149) implemented in PyTorch',
