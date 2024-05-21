@@ -11,7 +11,7 @@ export default {
       },
       {
         name: 'Cyber Defense Institute',
-        link: 'https://idciber.com',
+        link: 'https://idciber.org',
         description: 'Public commitee for the Cyber Defense Institute',
         techs: ['cybersecurity'],
         image: require('../../assets/img/portfolio/idciber.png'),
