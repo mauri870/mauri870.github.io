@@ -8,9 +8,16 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'font-awesome/css/font-awesome.css';
 
-utils.initAnalytics('UA-79904458-1');
+(() => {
+  utils.initAnalytics('UA-79904458-1');
 
-const site = createApp(Site);
-site.use(store);
-site.use(router);
-site.mount('site');
+  if (window.location.href === 'https://mauri870.github.io') {
+    window.location.href = 'https:/mauri870.com';
+    return;
+  }
+
+  const site = createApp(Site);
+  site.use(store);
+  site.use(router);
+  site.mount('site');
+})();
