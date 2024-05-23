@@ -19,7 +19,7 @@ export default {
       {
         name: 'Kubernetes Health Controller',
         link: 'https://github.com/mauri870/k8s-controller-heartbeat',
-        description: 'A Kubernetes controller to monitor the health of services',
+        description: 'A Kubernetes controller for monitoring the health of cluster services',
         techs: ['kubernetes'],
         image: require('../../assets/img/portfolio/kubernetes.png'),
       },
