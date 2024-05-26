@@ -5,7 +5,7 @@ export default {
       {
         name: 'Golang',
         link: 'https://go-review.googlesource.com/q/author:mauri870@gmail.com',
-        description: 'Contributions to the language and toolchain',
+        description: 'Official member of the Go open source team and contributor to the language and toolchain',
         techs: ['Golang'],
         image: require('../../assets/img/portfolio/golang.png'),
       },
