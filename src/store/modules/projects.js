@@ -10,6 +10,13 @@ export default {
         image: require('../../assets/img/portfolio/golang.png'),
       },
       {
+        name: 'Linux on the Browser',
+        link: 'https://linux.mauri870.com',
+        description: 'A tiny Linux running in the browser',
+        techs: ['javascript', 'wasm', 'linux'],
+        image: require('../../assets/img/portfolio/linuxatemyram.png'),
+      },
+      {
         name: 'Cyber Defense Institute',
         link: 'https://idciber.org',
         description: 'Public committee for the Cyber Defense Institute',
